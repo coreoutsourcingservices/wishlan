@@ -1,0 +1,604 @@
+{
+  "searchData": [
+    {
+      "type": "category",
+      "name": "Seed Lasers",
+      "slug": "seed-lasers",
+      "url": "/products/seed-lasers",
+      "image": "/category/High-Precision-Seed-Fiber-Lasers.jpg",
+      "keywords": ["seed", "laser"]
+    },
+    {
+      "type": "category",
+      "name": "Broadband & ASE Sources",
+      "slug": "ase-sources",
+      "url": "/products/ase-sources",
+      "image": "/category/Broadband-ASE-Sources.jpg",
+      "keywords": ["broadband", "ase", "source"]
+    },
+    {
+      "type": "category",
+      "name": "Fiber Amplifiers",
+      "slug": "fiber-amplifiers",
+      "url": "/products/fiber-amplifiers",
+      "image": "/category/Fiber-Amplifier.jpg",
+      "keywords": ["fiber", "amplifier", "amp"]
+    },
+    {
+      "type": "category",
+      "name": "High-Power Fiber Lasers",
+      "slug": "high-power",
+      "url": "/products/high-power",
+      "image": "/category/High-Power-Single-Frequency-Fiber-Lasers.jpg",
+      "keywords": ["high", "power", "fiber", "laser", "hp"]
+    },
+    {
+      "type": "category",
+      "name": "Single-Frequency Fiber Lasers",
+      "slug": "single-frequency",
+      "url": "/products/single-frequency",
+      "image": "/category/Single-Frequency-Fiber-Lasers.jpg",
+      "keywords": ["single", "frequency", "fiber", "laser", "sf"]
+    },
+    {
+      "type": "category",
+      "name": "Point Light Sources",
+      "slug": "sled",
+      "url": "/products/sled",
+      "image": "/category/Point-Light-Source-Solutions.jpg",
+      "keywords": ["point", "light", "source"]
+    },
+    {
+      "type": "category",
+      "name": "Testing Systems",
+      "slug": "testing",
+      "url": "/products/testing",
+      "image": "/category/Laser-Testing-and-Measurement-Systems.jpg",
+      "keywords": ["testing", "system", "test"]
+    },
+    {
+      "type": "category",
+      "name": "Wavelength Conversion Lasers",
+      "slug": "wavelength-conversion",
+      "url": "/products/wavelength-conversion",
+      "image": "/category/Wavelength-Conversion-Laser-Solutions-High-Precision-Performance.jpg",
+      "keywords": ["wavelength", "conversion", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 μm High-Reliability Single-Frequency Seed Source",
+      "slug": "1um-high-reliability",
+      "url": "/products/seed-lasers/1um-high-reliability",
+      "category": "Seed Lasers",
+      "keywords": ["1.0 um", "1um", "high reliability", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 μm Industrial Single-Frequency Seed Source",
+      "slug": "1um-industrial",
+      "url": "/products/seed-lasers/1um-industrial",
+      "category": "Seed Lasers",
+      "keywords": ["1.0 um", "1um", "industrial", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 µm Narrow Linewidth Seed Laser",
+      "slug": "1um-narrow",
+      "url": "/products/seed-lasers/1um-narrow",
+      "category": "Seed Lasers",
+      "keywords": ["1.0 um", "1um", "narrow linewidth", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 µm Frequency-Stabilized Seed Laser",
+      "slug": "1um-stabilized",
+      "url": "/products/seed-lasers/1um-stabilized",
+      "category": "Seed Lasers",
+      "keywords": ["1.0 um", "1um", "frequency stabilized", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 µm Ultra-Low Noise Seed Laser",
+      "slug": "1um-ultra-low-noise",
+      "url": "/products/seed-lasers/1um-ultra-low-noise",
+      "category": "Seed Lasers",
+      "keywords": ["1.0 um", "1um", "ultra low noise", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 µm Narrow Linewidth Seed Laser",
+      "slug": "1-5um-narrow",
+      "url": "/products/seed-lasers/1-5um-narrow",
+      "category": "Seed Lasers",
+      "keywords": ["1.5 um", "1.5um", "narrow linewidth", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 µm Phase-Modulated Seed Laser",
+      "slug": "1-5um-phase",
+      "url": "/products/seed-lasers/1-5um-phase",
+      "category": "Seed Lasers",
+      "keywords": ["1.5 um", "1.5um", "phase modulated", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 µm Phase-Modulated Fiber Seed Source",
+      "slug": "2um-phase",
+      "url": "/products/seed-lasers/2um-phase",
+      "category": "Seed Lasers",
+      "keywords": ["2.0 um", "2um", "phase modulated", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 µm Single-Frequency Seed Laser",
+      "slug": "2um-single",
+      "url": "/products/seed-lasers/2um-single",
+      "category": "Seed Lasers",
+      "keywords": ["2.0 um", "2um", "2000nm", "seed", "laser"]
+    },
+    {
+      "type": "product",
+      "name": " 1.0 µm ASE Light Source",
+      "slug": "1um-ase",
+      "url": "/products/ase-sources/1um-ase",
+      "category": "Broadband & ASE Sources",
+      "keywords": ["1.0 um", "1um", "ase", "broadband", "source"]
+    },
+    {
+      "type": "product",
+      "name": " 1.5 µm ASE Light Source",
+      "slug": "1-5um-ase",
+      "url": "/products/ase-sources/1-5um-ase",
+      "category": "Broadband & ASE Sources",
+      "keywords": ["1.5 um", "1.5um", "ase", "broadband", "source"]
+    },
+    {
+      "type": "product",
+      "name": " 2.0 µm ASE Light Source",
+      "slug": "2um-ase",
+      "url": "/products/ase-sources/2um-ase",
+      "category": "Broadband & ASE Sources",
+      "keywords": ["2.0 um", "2um", "ase", "broadband", "source"]
+    },
+    {
+      "type": "product",
+      "name": "Broadband Light Source",
+      "slug": "broadband",
+      "url": "/products/ase-sources/broadband",
+      "category": "Broadband & ASE Sources",
+      "keywords": ["broadband", "light", "source"]
+    },
+    {
+      "type": "product",
+      "name": "Superluminescent LED (SLED)",
+      "slug": "sled-ase",
+      "url": "/products/ase-sources/sled-ase",
+      "category": "Broadband & ASE Sources",
+      "keywords": ["sled", "superluminescent", "led", "source"]
+    },
+    {
+      "type": "product",
+      "name": "High-Power Fiber Amplifier",
+      "slug": "high-power",
+      "url": "/products/fiber-amplifiers/high-power",
+      "category": "Fiber Amplifiers",
+      "keywords": ["high power", "fiber amplifier", "amp"]
+    },
+    {
+      "type": "product",
+      "name": "Fiber Amplifier Modules",
+      "slug": "modules",
+      "url": "/products/fiber-amplifiers/modules",
+      "category": "Fiber Amplifiers",
+      "keywords": ["module", "fiber amplifier", "amp"]
+    },
+    {
+      "type": "product",
+      "name": "Polarization-Maintaining Fiber Amplifier",
+      "slug": "pm",
+      "url": "/products/fiber-amplifiers/pm",
+      "category": "Fiber Amplifiers",
+      "keywords": ["polarization maintaining", "pm", "fiber amplifier"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 μm High-Power Single-Frequency Laser (0.2–2W)",
+      "slug": "1um-0-2w",
+      "url": "/products/high-power/1um-0-2w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.0 um", "1um", "high power", "0.2w", "2w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 μm High-Power Single-Frequency Laser (2~20W)",
+      "slug": "1um-2-20w",
+      "url": "/products/high-power/1um-2-20w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.0 um", "1um", "high power", "2w", "20w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 μm High-Power Single-Frequency Laser (20–500W)",
+      "slug": "1um-20-500w",
+      "url": "/products/high-power/1um-20-500w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.0 um", "1um", "high power", "20w", "500w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 µm High-Power CW Single-Frequency Fiber Laser",
+      "slug": "1um-cw",
+      "url": "/products/high-power/1um-cw",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.0 um", "1um", "high power", "cw", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 μm High-Power Single-Frequency Laser (0.2–2W)",
+      "slug": "1-5um-0-2w",
+      "url": "/products/high-power/1-5um-0-2w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.5 um", "1.5um", "high power", "0.2w", "2w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 μm High-Power Single-Frequency Laser (2~20W)",
+      "slug": "1-5um-2-20w",
+      "url": "/products/high-power/1-5um-2-20w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.5 um", "1.5um", "high power", "2w", "20w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 μm High-Power Single-Frequency Laser (20~120W)",
+      "slug": "1-5um-20-120w",
+      "url": "/products/high-power/1-5um-20-120w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.5 um", "1.5um", "high power", "20w", "120w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 µm High-Power CW Single-Frequency Fiber Laser",
+      "slug": "1-5um-cw",
+      "url": "/products/high-power/1-5um-cw",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["1.5 um", "1.5um", "high power", "cw", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0μm High-Power Single-Frequency Laser (0.05–2W)",
+      "slug": "2um-0-05-2w",
+      "url": "/products/high-power/2um-0-05-2w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["2.0 um", "2um", "high power", "0.05w", "2w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 μm High-Power Single-Frequency Laser (2–20W)",
+      "slug": "2um-2-20w",
+      "url": "/products/high-power/2um-2-20w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["2.0 um", "2um", "high power", "2w", "20w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 μm High-Power Single-Frequency Laser (20–500W)",
+      "slug": "2um-20-500w",
+      "url": "/products/high-power/2um-20-500w",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["2.0 um", "2um", "high power", "20w", "500w", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 µm High-Power CW Single-Frequency Fiber Laser",
+      "slug": "2um-cw",
+      "url": "/products/high-power/2um-cw",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["2.0 um", "2um", "2000nm", "high power", "cw", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "Kilowatt-Level Fiber Laser for Combustion Diagnostics",
+      "slug": "kilowatt",
+      "url": "/products/high-power/kilowatt",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["kilowatt", "high power", "kw", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "Long-Distance High-Resolution LiDAR Fiber Laser",
+      "slug": "lidar",
+      "url": "/products/high-power/lidar",
+      "category": "High-Power Fiber Lasers",
+      "keywords": ["lidar", "laser", "remote sensing"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 µm Single-Frequency Fiber Laser",
+      "slug": "1um",
+      "url": "/products/single-frequency/1um",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["1.0 um", "1um", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 µm Single-Frequency Fiber Laser",
+      "slug": "1-5um",
+      "url": "/products/single-frequency/1-5um",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["1.5 um", "1.5um", "1550nm", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 μm High-Reliability Single-Frequency Fiber Laser",
+      "slug": "1-5um-high-reliability",
+      "url": "/products/single-frequency/1-5um-high-reliability",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["1.5 um", "1.5um", "high reliability", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 μm Industrial Single-Frequency Fiber Laser",
+      "slug": "1-5um-industrial",
+      "url": "/products/single-frequency/1-5um-industrial",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["1.5 um", "1.5um", "industrial", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 µm Single-Frequency Fiber Laser",
+      "slug": "2um",
+      "url": "/products/single-frequency/2um",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["2.0 um", "2um", "2000nm", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 μm High-Reliability Single-Frequency Fiber Laser",
+      "slug": "2um-high-reliability",
+      "url": "/products/single-frequency/2um-high-reliability",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["2.0 um", "2um", "high reliability", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 μm Industrial Single-Frequency Fiber Laser",
+      "slug": "2um-industrial",
+      "url": "/products/single-frequency/2um-industrial",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["2.0 um", "2um", "industrial", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "Broadband Ultra-Low Noise Single-Frequency Fiber Laser",
+      "slug": "broadband-low-noise",
+      "url": "/products/single-frequency/broadband-low-noise",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["broadband", "ultra low noise", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "Compact Single-Frequency Fiber Laser",
+      "slug": "compact",
+      "url": "/products/single-frequency/compact",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["compact", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "Magnetic Field Detection Laser",
+      "slug": "magnetic-field",
+      "url": "/products/single-frequency/magnetic-field",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["magnetic field", "detection", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "Narrow Linewidth Single-Frequency Fiber Laser",
+      "slug": "narrow-linewidth",
+      "url": "/products/single-frequency/narrow-linewidth",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["narrow linewidth", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "High-Sensitivity Sensor-Stabilized Fiber Laser",
+      "slug": "sensor-stabilized",
+      "url": "/products/single-frequency/sensor-stabilized",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["sensor", "stabilized", "laser"]
+    },
+    {
+      "type": "product",
+      "name": "Frequency-Stabilized Fiber Laser (All Wavelengths)",
+      "slug": "stabilized",
+      "url": "/products/single-frequency/stabilized",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["frequency stabilized", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "Ultra-Low Noise Fiber Laser Series",
+      "slug": "ultra-low-noise",
+      "url": "/products/single-frequency/ultra-low-noise",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["ultra low noise", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "Hz-Level Ultra-Narrow Linewidth Single-Frequency Fiber Laser",
+      "slug": "ultra-narrow-linewidth",
+      "url": "/products/single-frequency/ultra-narrow-linewidth",
+      "category": "Single-Frequency Fiber Lasers",
+      "keywords": ["ultra narrow", "linewidth", "single frequency", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "1.0 µm Point Light Source",
+      "slug": "1um-point",
+      "url": "/products/sled/1um-point",
+      "category": "Point Light Sources",
+      "keywords": ["1.0 um", "1um", "point light", "source"]
+    },
+    {
+      "type": "product",
+      "name": "1.5 µm Point Light Source",
+      "slug": "1-5um-point",
+      "url": "/products/sled/1-5um-point",
+      "category": "Point Light Sources",
+      "keywords": ["1.5 um", "1.5um", "point light", "source"]
+    },
+    {
+      "type": "product",
+      "name": "2.0 µm Point Light Source",
+      "slug": "2um-point",
+      "url": "/products/sled/2um-point",
+      "category": "Point Light Sources",
+      "keywords": ["2.0 um", "2um", "2000nm", "point light", "source"]
+    },
+    {
+      "type": "product",
+      "name": "Noise Testing System",
+      "slug": "noise",
+      "url": "/products/testing/noise",
+      "category": "Testing Systems",
+      "keywords": ["noise", "testing", "system"]
+    },
+    {
+      "type": "product",
+      "name": "Spectral Testing System",
+      "slug": "spectral",
+      "url": "/products/testing/spectral",
+      "category": "Testing Systems",
+      "keywords": ["spectral", "testing", "system"]
+    },
+    {
+      "type": "product",
+      "name": "193 nm Frequency Converted Fiber Laser",
+      "slug": "193nm",
+      "url": "/products/wavelength-conversion/193nm",
+      "category": "Wavelength Conversion Lasers",
+      "keywords": ["193nm", "wavelength conversion", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "266 nm Frequency Converted Fiber Laser",
+      "slug": "266nm",
+      "url": "/products/wavelength-conversion/266nm",
+      "category": "Wavelength Conversion Lasers",
+      "keywords": ["266nm", "wavelength conversion", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "355 nm Frequency Converted Fiber Laser",
+      "slug": "355nm",
+      "url": "/products/wavelength-conversion/355nm",
+      "category": "Wavelength Conversion Lasers",
+      "keywords": ["355nm", "wavelength conversion", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "532 nm Frequency Converted Fiber Laser",
+      "slug": "532nm",
+      "url": "/products/wavelength-conversion/532nm",
+      "category": "Wavelength Conversion Lasers",
+      "keywords": ["532nm", "wavelength conversion", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "780 nm Frequency Converted Fiber Laser",
+      "slug": "780nm",
+      "url": "/products/wavelength-conversion/780nm",
+      "category": "Wavelength Conversion Lasers",
+      "keywords": ["780nm", "wavelength conversion", "fiber laser"]
+    },
+    {
+      "type": "product",
+      "name": "795 nm Frequency Converted Fiber Laser",
+      "slug": "795nm",
+      "url": "/products/wavelength-conversion/795nm",
+      "category": "Wavelength Conversion Lasers",
+      "keywords": ["795nm", "wavelength conversion", "fiber laser"]
+    },
+    {
+      "type": "application",
+      "name": "LiDAR Systems",
+      "slug": "lidar",
+      "url": "/applications/lidar",
+      "image": "/applications/LiDAR Systems.jpg",
+      "keywords": ["lidar", "fiber laser", "remote sensing"]
+    },
+    {
+      "type": "application",
+      "name": "Quantum Technology",
+      "slug": "quantum",
+      "url": "/applications/quantum",
+      "image": "/applications/Quantum Technology.jpg",
+      "keywords": ["quantum", "laser", "quantum optics"]
+    },
+    {
+      "type": "application",
+      "name": "Fiber Optic Sensing",
+      "slug": "sensing",
+      "url": "/applications/sensing",
+      "image": "/applications/Fiber Optic Sensing.jpg",
+      "keywords": ["sensing", "fiber optic", "distributed"]
+    },
+    {
+      "type": "application",
+      "name": "Gravitational Wave Detection",
+      "slug": "gravitational-wave",
+      "url": "/applications/gravitational-wave",
+      "image": "/applications/Gravitational Wave Detection.jpg",
+      "keywords": ["gravitational wave", "ultra stable", "low noise"]
+    },
+    {
+      "type": "application",
+      "name": "Optical Communication",
+      "slug": "communication",
+      "url": "/applications/communication",
+      "image": "/applications/Optical Communication.jpg",
+      "keywords": ["optical communication", "coherent", "telecom"]
+    },
+    {
+      "type": "application",
+      "name": "Biomedical & Diagnostics",
+      "slug": "biomedical",
+      "url": "/applications/biomedical",
+      "image": "/applications/Biomedical & Diagnostics.jpg",
+      "keywords": ["biomedical", "medical", "diagnostics"]
+    },
+    {
+      "type": "application",
+      "name": "Spectroscopy & Photonics",
+      "slug": "spectroscopy",
+      "url": "/applications/spectroscopy",
+      "image": "/applications/Spectroscopy & Photonics.jpg",
+      "keywords": ["spectroscopy", "photonics", "narrow linewidth"]
+    },
+    {
+      "type": "application",
+      "name": "Material Processing",
+      "slug": "material-processing",
+      "url": "/applications/material-processing",
+      "image": "/applications/Material Processing.jpg",
+      "keywords": ["material processing", "industrial", "high power"]
+    },
+    {
+      "type": "application",
+      "name": "Atomic Physics Research",
+      "slug": "atomic",
+      "url": "/applications/atomic",
+      "image": "/applications/Atomic Physics Research.jpg",
+      "keywords": ["atomic physics", "research", "precision measurement"]
+    },
+    {
+      "type": "application",
+      "name": "Satellite Communication",
+      "slug": "satellite",
+      "url": "/applications/satellite",
+      "image": "/applications/Satellite Communication.jpg",
+      "keywords": ["satellite", "space", "communication"]
+    }
+  ]
+}

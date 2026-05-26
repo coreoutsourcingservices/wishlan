@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5SCGKL0JT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-S5SCGKL0JT');
+    </script>
+  <title>Cashfree Payment Demo</title>
+  <script src="https://sdk.cashfree.com/js/v3/cashfree.js"></script>
+</head>
+<body>
+  <h2>Pay with Cashfree</h2>
+  <button onclick="startPayment()">Pay Now</button>
+
+  <script>
+  async function startPayment() {
+    // Call backend to create order
+    let response = await fetch("create-order.php");
+    let data = await response.json();
+    console.log("Order Response:", data); // <-- Check here
+
+    const cashfree = Cashfree({ mode: "sandbox" }); // Change to "production" later
+
+    let result = await cashfree.checkout({
+      paymentSessionId: data.payment_session_id,
+      redirectTarget: "_self"  // Redirects to Cashfree Checkout
+    });
+
+    console.log(result);
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^wishlan.com [NC]
+RewriteRule ^(.*)$ http://www.wishlan.com/$1 [L,R=301]
+
+
+# ==========================
+# Remove all "index" from URLs
+# ==========================
+RewriteEngine On
+# --- Root index redirect (example.com/index -> example.com/) ---
+RewriteCond %{THE_REQUEST} \s/index(\.php|\.html)?[\s?] [NC]
+RewriteRule ^index(\.php|\.html)?$ / [R=301,L]
+
+# Catch any /index, /index.php, /index.html request
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index(\.php|\.html)?[\s?] [NC]
+RewriteRule ^(.*)index(\.php|\.html)?$ /%1 [R=301,L]
