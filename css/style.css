@@ -27118,7 +27118,7 @@ img.lazy-image.loaded {
   padding-left: 10px !important;
 }
 .process-list1 li {
-  list-style: disc !important;
+  list-style: none !important;
 }
 .process-list2 {
   margin-left: 30px !important; 
