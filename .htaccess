@@ -3,7 +3,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-
+# Serve the dynamic blog detail page for unseen blog slugs under /blog/
+RewriteCond %{REQUEST_URI} ^/blog/[^/]+$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([^/]+)/?$ /blog/bloge_detail.html [L,QSA]
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^wishlan.com [NC]
