@@ -1435,7 +1435,10 @@
           <div class="inner-box">
 
             <div class="image-box">
-            <a href="/blog/bloge_detail.html?slug=${encodeURIComponent(blog.BlogHeadingURL)}">
+            <a
+ href="/blog/${blog.BlogHeadingURL}"
+ onclick='saveBlogData("${blog._id}")'
+>
                 <img
                   src="${blog.BlogImage}"
                   alt="${blog.BlogHeading}"
@@ -1460,7 +1463,10 @@
               </div>
 
               <h5>
-               <a href="/blog/bloge_detail.html?slug=${encodeURIComponent(blog.BlogHeadingURL)}">
+               <a
+ href="/blog/${blog.BlogHeadingURL}"
+ onclick='saveBlogData("${blog._id}")'
+>
                   ${blog.BlogHeading}
                 </a>
               </h5>
@@ -1470,7 +1476,10 @@
               </div>
 
               <div class="link-box1">
-              <a href="/blog/bloge_detail.html?slug=${encodeURIComponent(blog.BlogHeadingURL)}">
+              <a
+ href="/blog/${blog.BlogHeadingURL}"
+ onclick='saveBlogData("${blog._id}")'
+>
                   <span class="flaticon-next-1"></span>
                 </a>
               </div>
@@ -1531,6 +1540,9 @@
         showPage(currentPage + 1);
       }
     }
+    function saveBlogData(id) {
+   sessionStorage.setItem("blogId", id);
+}
 
     loadBlogs();
   </script>

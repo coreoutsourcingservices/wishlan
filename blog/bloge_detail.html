@@ -195,8 +195,11 @@
 
     async function loadSingleBlog() {
 
-      const urlParams = new URLSearchParams(window.location.search);
-      const slug = urlParams.get("slug") || window.location.pathname.split("/").pop();
+const slug = window.location.pathname.split("/").pop();
+
+const blogId = sessionStorage.getItem("blogId");
+
+// console.log(blogId);
 
       console.log("blog slug:", slug);
 
@@ -207,7 +210,7 @@
 
       try {
         const response = await fetch(
-          `https://aliceblue-swan-648054.hostingersite.com/wishlan/get-blogs/${encodeURIComponent(slug)}`
+          `https://aliceblue-swan-648054.hostingersite.com/wishlan/get-blogs/${blogId}`
         );
 
         const result = await response.json();
