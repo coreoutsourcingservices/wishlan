@@ -1258,7 +1258,7 @@ if ($(".sponsors-carousel").length) {
       const res = await fetch(url, { cache: "no-cache" });
       if (!res.ok) throw new Error(res.status);
       const html = await res.text();
-      el.outerHTML = html; 
+      el.outerHTML = html;
     } catch (e) {
       console.error("Include failed:", url, e);
       el.innerHTML = "<p style='color:red'>Header load error</p>";
@@ -1298,7 +1298,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    
+
 
 //Ensure header is fully loaded before injecting mobile nav
 async function initMobileMenu() {
