@@ -333,15 +333,12 @@ async function submitCareerForm(event) {
     const form = document.getElementById("careerForm");
     const formData = new FormData(form);
 
-    // Debug
-    for (const [key, value] of formData.entries()) {
-        console.log(key, value);
-    }
+
 
     try {
 
         const response = await fetch(
-            "http://localhost:4040/wishlan/career-form",
+            "https://aliceblue-swan-648054.hostingersite.com/wishlan/career-form",
             {
                 method: "POST",
                 body: formData
@@ -369,7 +366,7 @@ async function submitCareerForm(event) {
 
     } catch (error) {
 
-        console.log(error);
+        // console.log(error);
 
         showPopup(
             "Error",
