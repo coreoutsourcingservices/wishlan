@@ -59,6 +59,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+  <style>
+    .spinner {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 3px solid rgba(255, 255, 255, .4);
+      border-top: 3px solid #fff;
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    button:disabled {
+      opacity: .7;
+      cursor: not-allowed;
+    }
+  </style>
 </head>
 
 <body>
@@ -206,6 +230,16 @@
   <script>
     async function sendMessage(event) {
       event.preventDefault();
+      const btn = document.getElementById("contact_form_submit");
+      const btnText = document.getElementById("btnText");
+
+      // Double click stop
+      btn.disabled = true;
+
+      btnText.innerHTML = `
+        <span class="spinner"></span>
+        Sending...
+    `;
 
       try {
         const name = document.querySelector(
@@ -238,6 +272,7 @@
         const data = await response.json();
 
         alert(data.message);
+        btnText.innerHTML = "Send";
 
         document.getElementById("contact-form").reset();
       } catch (error) {
