@@ -488,13 +488,18 @@
 
     <!-- prahlad -->
      <!-- Vertical Timeline Section START -->
+<!-- ================= RESPONSIVE COMPANY TIMELINE START ================= -->
+
 <section
     class="company-timeline"
+    id="companyTimeline"
     style="
         background:#1c1e22;
         padding:70px 20px;
         color:#ffffff;
         font-family:'Inter', sans-serif;
+        box-sizing:border-box;
+        overflow:hidden;
     "
 >
 
@@ -502,20 +507,26 @@
         style="
             max-width:1200px;
             margin:0 auto;
+            width:100%;
         "
     >
 
         <!-- Heading -->
         <div
+            id="timelineHeader"
             style="
                 text-align:center;
                 margin-bottom:55px;
             "
         >
+
             <h2
+                id="timelineHeading"
                 style="
-                    color:white;
+                    color:#ffffff;
                     font-size:48px;
+                    line-height:1.1;
+                    font-weight:700;
                     margin:0 0 18px;
                     text-transform:uppercase;
                 "
@@ -524,24 +535,31 @@
             </h2>
 
             <p
+                id="timelineSubheading"
                 style="
-                    color:white;
+                    color:#ffffff;
                     font-size:16px;
-                    margin:0;
+                    line-height:1.7;
+                    margin:0 auto;
+                    max-width:750px;
+                    opacity:0.9;
                 "
             >
                 Follow our journey from a small startup to a global presence,
                 one milestone at a time.
             </p>
+
         </div>
 
 
-        <!-- Timeline Main Layout -->
+        <!-- Main Layout -->
         <div
+            id="timelineMainLayout"
             style="
                 display:flex;
-                gap:60px;
+                gap:55px;
                 align-items:flex-start;
+                width:100%;
                 position:relative;
             "
         >
@@ -550,40 +568,47 @@
             <div
                 id="verticalYearTrack"
                 style="
-                    width:170px;
-                    min-width:170px;
+                    width:175px;
+                    min-width:175px;
                     position:relative;
-                    padding:10px 0;
+                    padding:8px 0;
+                    box-sizing:border-box;
                 "
             >
 
-                <!-- Vertical Orange Line -->
+                <!-- Vertical Line -->
                 <div
+                    id="timelineVerticalLine"
                     style="
                         position:absolute;
-                        left:34px;
-                        top:20px;
-                        bottom:20px;
+                        left:35px;
+                        top:28px;
+                        bottom:28px;
                         width:3px;
                         background:#f5aa41;
+                        border-radius:20px;
                     "
                 ></div>
 
-                <!-- years JS se yaha aayenge -->
+                <!-- years injected by JS -->
 
             </div>
 
 
             <!-- RIGHT CONTENT -->
             <div
+                id="timelineContentBox"
                 style="
                     flex:1;
-                    min-height:450px;
-                    background:#2a2d31;
-                    border:1px solid rgba(255,255,255,0.08);
-                    border-radius:12px;
-                    padding:35px;
+                    width:100%;
+                    min-width:0;
+                    min-height:470px;
+                    background:#272a2f;
+                    border:1px solid rgba(255,255,255,0.07);
+                    border-radius:18px;
+                    padding:38px;
                     box-sizing:border-box;
+                    box-shadow:0 18px 45px rgba(0,0,0,0.18);
                 "
             >
 
@@ -596,11 +621,13 @@
     </div>
 
 </section>
-<!-- Vertical Timeline Section END -->
- <script>
+
+
+<script>
 document.addEventListener("DOMContentLoaded", function () {
 
     const data = [
+
         {
             year: 2014,
             text: `WishLan began its journey by focusing on SEO and content writing services. At that stage, our mission was clear — to help businesses establish a strong digital footprint with strategies that delivered measurable outcomes. By addressing the specific needs of small and mid-sized enterprises, we laid the foundation for long-term partnerships built on trust and performance.`,
@@ -609,14 +636,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         {
             year: 2016,
-            text: `We expanded our expertise into website development and e-commerce solutions. With responsive, secure, and user-friendly platforms, we provided businesses with more than just a website — we created digital storefronts designed to support their long-term objectives.`,
+            text: `We expanded our expertise into website development and e-commerce solutions. With responsive, secure, and user-friendly platforms, we provided businesses with more than just a website — we created digital storefronts designed to support their long-term objectives. This expansion helped WishLan evolve into a dependable partner for companies seeking to establish their presence online.`,
             tagline: `Going Strong — Success is the sum of small efforts repeated every day.`,
             img: "/images/about-images/2016.jpg"
         },
 
         {
             year: 2018,
-            text: `Recognizing the rising demand for comprehensive marketing services, we introduced dedicated teams for PPC campaigns and social media advertising. By combining creative strategies with measurable performance, we delivered marketing campaigns that produced meaningful results.`,
+            text: `Recognizing the rising demand for comprehensive marketing services, we introduced dedicated teams for PPC campaigns and social media advertising. By combining creative strategies with measurable performance, we delivered marketing campaigns that produced meaningful results. This step solidified our role as a complete digital marketing provider.`,
             img: "/images/about-images/2018.jpg"
         },
 
@@ -655,31 +682,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
         {
             year: 2025,
-            text: `WishLan continues to deliver client-focused solutions across web development, apps, marketing, AI, and technical support services. Each project is approached with persistence and dedication.`,
+            text: `WishLan continues to deliver client-focused solutions across web development, apps, marketing, AI, and technical support services. Each project is approached with persistence and dedication, ensuring that we meet business challenges with practical and effective strategies.`,
             img: "/images/about-images/2025.jpg"
         },
 
         {
             year: 2026,
-            text: `Our journey does not stop here. With continuous adaptation to new technologies and client expectations, WishLan remains dedicated to future milestones.`,
+            text: `Our journey does not stop here. With continuous adaptation to new technologies and client expectations, WishLan remains dedicated to future milestones. Guided by determination, trust, and vision, we look ahead to a future where our solutions create lasting value.`,
             tagline: `Future Ready — The road ahead is built on dedication, trust, and vision.`,
             img: "/images/about-images/2026.jpg"
         }
+
     ];
 
 
+    const section = document.getElementById("companyTimeline");
+    const mainLayout = document.getElementById("timelineMainLayout");
     const yearTrack = document.getElementById("verticalYearTrack");
+    const verticalLine = document.getElementById("timelineVerticalLine");
     const eventContent = document.getElementById("verticalEventContent");
+    const contentBox = document.getElementById("timelineContentBox");
+    const heading = document.getElementById("timelineHeading");
+    const subheading = document.getElementById("timelineSubheading");
 
-    if (!yearTrack || !eventContent) return;
+    if (
+        !section ||
+        !mainLayout ||
+        !yearTrack ||
+        !eventContent ||
+        !contentBox
+    ) return;
+
 
     let activeIndex = 0;
+
     const yearButtons = [];
 
 
+    /* ================= CREATE YEARS ================= */
+
     function createYears() {
 
-        data.forEach(function(item, index) {
+        data.forEach(function (item, index) {
 
             const yearItem = document.createElement("div");
 
@@ -687,9 +731,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 position:relative;
                 display:flex;
                 align-items:center;
-                min-height:75px;
+                min-height:76px;
                 cursor:pointer;
-                z-index:2;
+                z-index:5;
+                box-sizing:border-box;
             `;
 
 
@@ -701,9 +746,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 border-radius:50%;
                 border:3px solid #f5aa41;
                 background:#1c1e22;
-                margin-left:26px;
+                margin-left:27px;
                 flex-shrink:0;
-                transition:0.3s ease;
+                transition:all 0.3s ease;
+                box-sizing:border-box;
             `;
 
 
@@ -713,15 +759,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
             year.style.cssText = `
                 margin-left:22px;
-                background:#2a2d31;
+                background:#2f3237;
                 color:#ffffff;
-                padding:10px 18px;
-                border-radius:30px;
+                padding:11px 18px;
+                border-radius:50px;
                 font-weight:700;
-                font-size:16px;
-                transition:0.3s ease;
-                min-width:80px;
+                font-size:15px;
+                line-height:1;
+                transition:all 0.3s ease;
+                min-width:82px;
                 text-align:center;
+                border:1px solid rgba(255,255,255,0.05);
+                box-shadow:0 7px 18px rgba(0,0,0,0.15);
+                box-sizing:border-box;
+                user-select:none;
             `;
 
 
@@ -730,7 +781,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             yearItem.addEventListener("click", function () {
+
                 selectYear(index);
+
+                if (window.innerWidth <= 767) {
+
+                    yearItem.scrollIntoView({
+                        behavior: "smooth",
+                        inline: "center",
+                        block: "nearest"
+                    });
+
+                }
+
             });
 
 
@@ -748,34 +811,57 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+
+    /* ================= SHOW CONTENT ================= */
+
     function showContent(index) {
 
         const item = data[index];
+
+        const mobile = window.innerWidth <= 767;
+        const tablet = window.innerWidth > 767 && window.innerWidth <= 991;
+
+
+        let imageHeight = "300px";
+
+        if (mobile) {
+            imageHeight = "220px";
+        } else if (tablet) {
+            imageHeight = "260px";
+        }
+
 
         eventContent.innerHTML = `
 
             <div
                 style="
                     display:flex;
-                    gap:35px;
-                    align-items:flex-start;
-                    flex-wrap:wrap;
+                    flex-direction:${mobile ? "column" : "row"};
+                    align-items:${mobile ? "stretch" : "flex-start"};
+                    gap:${mobile ? "24px" : "35px"};
+                    width:100%;
+                    box-sizing:border-box;
                 "
             >
 
                 <!-- TEXT -->
                 <div
                     style="
-                        flex:1 1 450px;
+                        flex:1;
+                        width:100%;
+                        min-width:0;
+                        box-sizing:border-box;
                     "
                 >
 
                     <div
                         style="
+                            display:inline-block;
                             color:#f5aa41;
-                            font-size:18px;
+                            font-size:${mobile ? "14px" : "16px"};
                             font-weight:700;
                             margin-bottom:10px;
+                            letter-spacing:1px;
                         "
                     >
                         ${item.year}
@@ -785,8 +871,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h3
                         style="
                             color:#ffffff;
-                            font-size:30px;
-                            margin:0 0 20px;
+                            font-size:${mobile ? "25px" : tablet ? "27px" : "32px"};
+                            line-height:1.2;
+                            font-weight:700;
+                            margin:0 0 18px;
                         "
                     >
                         Our Journey in ${item.year}
@@ -795,10 +883,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     <p
                         style="
-                            color:#ffffff;
-                            font-size:16px;
-                            line-height:1.8;
+                            color:#e9e9e9;
+                            font-size:${mobile ? "14px" : "16px"};
+                            line-height:${mobile ? "1.75" : "1.85"};
                             margin:0;
+                            word-break:normal;
                         "
                     >
                         ${item.text}
@@ -807,20 +896,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     ${
                         item.tagline
-                        ? `
-                            <p
-                                style="
-                                    margin-top:20px;
-                                    color:#f5aa41;
-                                    font-size:16px;
-                                    font-style:italic;
-                                    line-height:1.6;
-                                "
-                            >
-                                ${item.tagline}
-                            </p>
-                        `
-                        : ""
+                            ? `
+                                <div
+                                    style="
+                                        margin-top:22px;
+                                        padding:14px 16px;
+                                        border-left:3px solid #f5aa41;
+                                        background:rgba(245,170,65,0.06);
+                                        border-radius:0 8px 8px 0;
+                                    "
+                                >
+                                    <p
+                                        style="
+                                            margin:0;
+                                            color:#f5aa41;
+                                            font-size:${mobile ? "13px" : "15px"};
+                                            line-height:1.6;
+                                            font-style:italic;
+                                        "
+                                    >
+                                        ${item.tagline}
+                                    </p>
+                                </div>
+                            `
+                            : ""
                     }
 
                 </div>
@@ -829,22 +928,38 @@ document.addEventListener("DOMContentLoaded", function () {
                 <!-- IMAGE -->
                 <div
                     style="
-                        flex:0 1 420px;
+                        flex:${mobile ? "none" : "0 1 420px"};
                         width:100%;
+                        max-width:${mobile ? "100%" : "420px"};
+                        box-sizing:border-box;
                     "
                 >
 
-                    <img
-                        src="${item.img}"
-                        alt="WishLan ${item.year}"
+                    <div
                         style="
                             width:100%;
-                            height:300px;
-                            object-fit:cover;
-                            border-radius:10px;
-                            display:block;
+                            overflow:hidden;
+                            border-radius:14px;
+                            background:#1c1e22;
+                            box-shadow:0 15px 35px rgba(0,0,0,0.22);
                         "
                     >
+
+                        <img
+                            src="${item.img}"
+                            alt="WishLan journey ${item.year}"
+                            style="
+                                width:100%;
+                                height:${imageHeight};
+                                object-fit:cover;
+                                display:block;
+                                transition:transform 0.4s ease;
+                            "
+                            onmouseenter="this.style.transform='scale(1.03)'"
+                            onmouseleave="this.style.transform='scale(1)'"
+                        >
+
+                    </div>
 
                 </div>
 
@@ -855,30 +970,41 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+
+    /* ================= SELECT YEAR ================= */
+
     function selectYear(index) {
+
+        if (index < 0 || index >= data.length) return;
 
         activeIndex = index;
 
 
-        yearButtons.forEach(function(button, i) {
+        yearButtons.forEach(function (button, i) {
 
             if (i === activeIndex) {
 
                 button.year.style.background = "#f5aa41";
                 button.year.style.color = "#1c1e22";
-                button.year.style.transform = "scale(1.08)";
+                button.year.style.transform = "scale(1.06)";
+                button.year.style.boxShadow =
+                    "0 8px 22px rgba(245,170,65,0.25)";
 
                 button.dot.style.background = "#f5aa41";
+                button.dot.style.transform = "scale(1.25)";
                 button.dot.style.boxShadow =
-                    "0 0 15px rgba(245,170,65,0.8)";
+                    "0 0 18px rgba(245,170,65,0.8)";
 
             } else {
 
-                button.year.style.background = "#2a2d31";
+                button.year.style.background = "#2f3237";
                 button.year.style.color = "#ffffff";
                 button.year.style.transform = "scale(1)";
+                button.year.style.boxShadow =
+                    "0 7px 18px rgba(0,0,0,0.15)";
 
                 button.dot.style.background = "#1c1e22";
+                button.dot.style.transform = "scale(1)";
                 button.dot.style.boxShadow = "none";
 
             }
@@ -891,11 +1017,285 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+
+    /* ================= RESPONSIVE ================= */
+
+    function applyResponsive() {
+
+        const width = window.innerWidth;
+
+        const mobile = width <= 767;
+        const tablet = width > 767 && width <= 991;
+
+
+        /* ================= MOBILE ================= */
+
+        if (mobile) {
+
+            section.style.padding = "42px 14px";
+
+
+            if (heading) {
+
+                heading.style.fontSize = "30px";
+                heading.style.lineHeight = "1.15";
+                heading.style.marginBottom = "12px";
+
+            }
+
+
+            if (subheading) {
+
+                subheading.style.fontSize = "14px";
+                subheading.style.lineHeight = "1.6";
+                subheading.style.padding = "0 5px";
+
+            }
+
+
+            const header = document.getElementById("timelineHeader");
+
+            if (header) {
+
+                header.style.marginBottom = "30px";
+
+            }
+
+
+            mainLayout.style.display = "block";
+
+
+            /* Years Horizontal */
+
+            yearTrack.style.display = "flex";
+            yearTrack.style.width = "100%";
+            yearTrack.style.minWidth = "0";
+            yearTrack.style.gap = "10px";
+            yearTrack.style.overflowX = "auto";
+            yearTrack.style.overflowY = "hidden";
+            yearTrack.style.padding = "8px 2px 18px";
+            yearTrack.style.marginBottom = "12px";
+            yearTrack.style.scrollBehavior = "smooth";
+            yearTrack.style.WebkitOverflowScrolling = "touch";
+            yearTrack.style.scrollbarWidth = "none";
+            yearTrack.style.msOverflowStyle = "none";
+
+
+            if (verticalLine) {
+
+                verticalLine.style.display = "none";
+
+            }
+
+
+            yearButtons.forEach(function (button) {
+
+                button.container.style.display = "block";
+                button.container.style.minHeight = "auto";
+                button.container.style.flexShrink = "0";
+
+                button.dot.style.display = "none";
+
+                button.year.style.marginLeft = "0";
+                button.year.style.minWidth = "74px";
+                button.year.style.padding = "10px 15px";
+                button.year.style.fontSize = "14px";
+
+            });
+
+
+            contentBox.style.width = "100%";
+            contentBox.style.minHeight = "auto";
+            contentBox.style.padding = "22px 16px";
+            contentBox.style.borderRadius = "14px";
+
+
+        /* ================= TABLET ================= */
+
+        } else if (tablet) {
+
+            section.style.padding = "55px 20px";
+
+
+            if (heading) {
+
+                heading.style.fontSize = "38px";
+
+            }
+
+
+            if (subheading) {
+
+                subheading.style.fontSize = "15px";
+
+            }
+
+
+            const header = document.getElementById("timelineHeader");
+
+            if (header) {
+
+                header.style.marginBottom = "42px";
+
+            }
+
+
+            mainLayout.style.display = "flex";
+            mainLayout.style.gap = "30px";
+
+
+            yearTrack.style.display = "block";
+            yearTrack.style.width = "145px";
+            yearTrack.style.minWidth = "145px";
+            yearTrack.style.overflow = "visible";
+            yearTrack.style.padding = "8px 0";
+            yearTrack.style.marginBottom = "0";
+
+
+            if (verticalLine) {
+
+                verticalLine.style.display = "block";
+                verticalLine.style.left = "27px";
+
+            }
+
+
+            yearButtons.forEach(function (button) {
+
+                button.container.style.display = "flex";
+                button.container.style.minHeight = "68px";
+
+                button.dot.style.display = "block";
+                button.dot.style.marginLeft = "19px";
+
+                button.year.style.marginLeft = "15px";
+                button.year.style.minWidth = "70px";
+                button.year.style.padding = "9px 13px";
+                button.year.style.fontSize = "13px";
+
+            });
+
+
+            contentBox.style.padding = "28px";
+            contentBox.style.minHeight = "430px";
+
+
+        /* ================= DESKTOP ================= */
+
+        } else {
+
+            section.style.padding = "70px 20px";
+
+
+            if (heading) {
+
+                heading.style.fontSize = "48px";
+
+            }
+
+
+            if (subheading) {
+
+                subheading.style.fontSize = "16px";
+
+            }
+
+
+            const header = document.getElementById("timelineHeader");
+
+            if (header) {
+
+                header.style.marginBottom = "55px";
+
+            }
+
+
+            mainLayout.style.display = "flex";
+            mainLayout.style.gap = "55px";
+
+
+            yearTrack.style.display = "block";
+            yearTrack.style.width = "175px";
+            yearTrack.style.minWidth = "175px";
+            yearTrack.style.overflow = "visible";
+            yearTrack.style.padding = "8px 0";
+            yearTrack.style.marginBottom = "0";
+
+
+            if (verticalLine) {
+
+                verticalLine.style.display = "block";
+                verticalLine.style.left = "35px";
+
+            }
+
+
+            yearButtons.forEach(function (button) {
+
+                button.container.style.display = "flex";
+                button.container.style.minHeight = "76px";
+
+                button.dot.style.display = "block";
+                button.dot.style.marginLeft = "27px";
+
+                button.year.style.marginLeft = "22px";
+                button.year.style.minWidth = "82px";
+                button.year.style.padding = "11px 18px";
+                button.year.style.fontSize = "15px";
+
+            });
+
+
+            contentBox.style.padding = "38px";
+            contentBox.style.minHeight = "470px";
+
+        }
+
+
+        showContent(activeIndex);
+
+    }
+
+
+
+    /* ================= START ================= */
+
     createYears();
+
     selectYear(0);
+
+    applyResponsive();
+
+
+
+    /* ================= RESIZE ================= */
+
+    let resizeTimer;
+
+    window.addEventListener("resize", function () {
+
+        clearTimeout(resizeTimer);
+
+        resizeTimer = setTimeout(function () {
+
+            applyResponsive();
+
+        }, 150);
+
+    });
 
 });
 </script>
+
+
+<!-- Hide mobile horizontal scrollbar -->
+<style>
+#verticalYearTrack::-webkit-scrollbar {
+    display: none;
+}
+</style>
+
+<!-- ================= RESPONSIVE COMPANY TIMELINE END ================= -->
 
     <!-- Funfacts Section -->
     <section class="facts-section alternate">
