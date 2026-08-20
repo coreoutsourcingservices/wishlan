@@ -532,6 +532,39 @@
                             </div>
 
                         </div>
+                        <!-- WEBSITE NAME -->
+
+                        <div style="
+    width:100%;
+    margin-bottom:18px;
+    box-sizing:border-box;
+">
+
+                            <label style="
+        display:block;
+        color:#1f2937;
+        font-size:14px;
+        font-weight:600;
+        margin-bottom:8px;
+    ">
+                                Website Name
+                            </label>
+
+                            <input type="text" name="websiteName" placeholder="Enter website name" style="
+            width:100%;
+            height:50px;
+            padding:0 15px;
+            border:1px solid #d9dce3;
+            border-radius:8px;
+            outline:none;
+            color:#111827;
+            background:#ffffff;
+            font-family:inherit;
+            font-size:14px;
+            box-sizing:border-box;
+        ">
+
+                        </div>
 
 
                         <!-- ADDRESS -->
@@ -690,19 +723,19 @@
                         <!-- SUBMIT -->
 
                         <button type="submit" style="
-                            width:100%;
-                            height:52px;
-                            margin-top:5px;
-                            padding:0 20px;
-                            border:none;
-                            border-radius:8px;
-                            background:#635bff;
-                            color:#ffffff;
-                            font-family:inherit;
-                            font-size:15px;
-                            font-weight:700;
-                            cursor:pointer;
-                        ">
+        width:100%;
+        height:52px;
+        margin-top:5px;
+        padding:0 20px;
+        border:none;
+        border-radius:8px;
+        background:#635bff;
+        color:#ffffff;
+        font-family:inherit;
+        font-size:15px;
+        font-weight:700;
+        cursor:pointer;
+    ">
                             Send Enquiry →
                         </button>
 
@@ -716,6 +749,105 @@
         </div>
 
     </section>
+    <script>
+        const contactForm = document.getElementById("contactForm");
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+
+        contactForm.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            // Form fields
+            const name = this.querySelector('[name="name"]').value.trim();
+            const email = this.querySelector('[name="email"]').value.trim();
+            const company = this.querySelector('[name="company"]').value.trim();
+            const phone = this.querySelector('[name="phone"]').value.trim();
+            const websiteName = this.querySelector('[name="websiteName"]').value.trim();
+            const address = this.querySelector('[name="address"]').value.trim();
+            const service = this.querySelector('[name="service"]').value;
+            const message = this.querySelector('[name="message"]').value.trim();
+
+            // Basic validation
+            if (!name || !email || !phone || !service) {
+                alert("Please fill all required fields.");
+                return;
+            }
+
+            // JSON data jo backend par jayega
+            const formData = {
+                name,
+                email,
+                company,
+                phone,
+                websiteName,
+                address,
+                service,
+                message
+            };
+
+            try {
+                // Button loading start
+                submitButton.disabled = true;
+
+                submitButton.innerHTML = `
+                <span class="spinner"></span>
+                &nbsp; Sending...
+            `;
+
+                const response = await fetch(
+                    "https://pk.coreoutsourcingservices.in/wishlan/enquiry",
+                    {
+                        method: "POST",
+
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+
+                        body: JSON.stringify(formData)
+                    }
+                );
+
+                // Backend response
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(
+                        data.message || "Something went wrong"
+                    );
+                }
+
+                if (data.success) {
+                    alert(
+                        data.message ||
+                        "Your enquiry has been submitted successfully."
+                    );
+
+                    // Form clear
+                    contactForm.reset();
+                } else {
+                    throw new Error(
+                        data.message ||
+                        "Enquiry submission failed"
+                    );
+                }
+
+            } catch (error) {
+                console.error("Enquiry Error:", error);
+
+                alert(
+                    error.message ||
+                    "Unable to submit enquiry. Please try again."
+                );
+
+            } finally {
+                // Button loading stop
+                submitButton.disabled = false;
+
+                submitButton.innerHTML = `
+                Send Enquiry →
+            `;
+            }
+        });
+    </script>
 
     <script>
 
