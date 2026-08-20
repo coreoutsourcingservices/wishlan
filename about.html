@@ -429,10 +429,10 @@
 
 
     <!-- Timeline Section START -->
-    <section class="company-timeline">
+    <!-- <section class="company-timeline">
         <div class="wrap max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <!-- Header Section -->
+             Header Section
             <div class="text-center mb-12" style="color: white; text-align: center;">
                 <div class="inner mx-auto max-w-3xl">
                     <div class="sec-title">
@@ -444,13 +444,13 @@
                 </div>
             </div>
 
-            <!-- Timeline Section -->
+
             <div class="timeline-wrap relative">
 
-                <!-- Year Scroller Navigation -->
+
                 <div class="year-scroll flex justify-center items-center gap-4 mb-6">
 
-                    <!-- Previous Button -->
+
                     <button id="prevBtn" class="nav-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -458,14 +458,14 @@
                         </svg>
                     </button>
 
-                    <!-- Year Track Container -->
+
                     <div class="year-track-container flex-1">
                         <div class="year-track" id="yearTrack">
-                            <!-- Year items will be injected by JS -->
+
                         </div>
                     </div>
 
-                    <!-- Next Button -->
+
                     <button id="nextBtn" class="nav-btn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
@@ -474,17 +474,428 @@
                     </button>
                 </div>
 
-                <!-- Event Content Display -->
+
                 <div class="events-content mt-12 bg-gray-800/30 p-6 md:p-10 rounded-2xl shadow-xl min-h-[300px] overflow-hidden"
                     style="background-color: var(--bg-light); border: 1px solid rgba(255,255,255,0.05);">
-                    <!-- Event content will be injected by JS -->
+
                     <div id="eventContent"></div>
                 </div>
 
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Timeline Section END -->
+
+    <!-- prahlad -->
+     <!-- Vertical Timeline Section START -->
+<section
+    class="company-timeline"
+    style="
+        background:#1c1e22;
+        padding:70px 20px;
+        color:#ffffff;
+        font-family:'Inter', sans-serif;
+    "
+>
+
+    <div
+        style="
+            max-width:1200px;
+            margin:0 auto;
+        "
+    >
+
+        <!-- Heading -->
+        <div
+            style="
+                text-align:center;
+                margin-bottom:55px;
+            "
+        >
+            <h2
+                style="
+                    color:white;
+                    font-size:48px;
+                    margin:0 0 18px;
+                    text-transform:uppercase;
+                "
+            >
+                Our Company Story
+            </h2>
+
+            <p
+                style="
+                    color:white;
+                    font-size:16px;
+                    margin:0;
+                "
+            >
+                Follow our journey from a small startup to a global presence,
+                one milestone at a time.
+            </p>
+        </div>
+
+
+        <!-- Timeline Main Layout -->
+        <div
+            style="
+                display:flex;
+                gap:60px;
+                align-items:flex-start;
+                position:relative;
+            "
+        >
+
+            <!-- LEFT YEARS -->
+            <div
+                id="verticalYearTrack"
+                style="
+                    width:170px;
+                    min-width:170px;
+                    position:relative;
+                    padding:10px 0;
+                "
+            >
+
+                <!-- Vertical Orange Line -->
+                <div
+                    style="
+                        position:absolute;
+                        left:34px;
+                        top:20px;
+                        bottom:20px;
+                        width:3px;
+                        background:#f5aa41;
+                    "
+                ></div>
+
+                <!-- years JS se yaha aayenge -->
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div
+                style="
+                    flex:1;
+                    min-height:450px;
+                    background:#2a2d31;
+                    border:1px solid rgba(255,255,255,0.08);
+                    border-radius:12px;
+                    padding:35px;
+                    box-sizing:border-box;
+                "
+            >
+
+                <div id="verticalEventContent"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Vertical Timeline Section END -->
+ <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const data = [
+        {
+            year: 2014,
+            text: `WishLan began its journey by focusing on SEO and content writing services. At that stage, our mission was clear — to help businesses establish a strong digital footprint with strategies that delivered measurable outcomes. By addressing the specific needs of small and mid-sized enterprises, we laid the foundation for long-term partnerships built on trust and performance.`,
+            img: "/images/about-images/2014.jpg"
+        },
+
+        {
+            year: 2016,
+            text: `We expanded our expertise into website development and e-commerce solutions. With responsive, secure, and user-friendly platforms, we provided businesses with more than just a website — we created digital storefronts designed to support their long-term objectives.`,
+            tagline: `Going Strong — Success is the sum of small efforts repeated every day.`,
+            img: "/images/about-images/2016.jpg"
+        },
+
+        {
+            year: 2018,
+            text: `Recognizing the rising demand for comprehensive marketing services, we introduced dedicated teams for PPC campaigns and social media advertising. By combining creative strategies with measurable performance, we delivered marketing campaigns that produced meaningful results.`,
+            img: "/images/about-images/2018.jpg"
+        },
+
+        {
+            year: 2020,
+            text: `Our services grew beyond traditional marketing into mobile app development, UI/UX design, and professional graphic design. By offering these solutions under one roof, we ensured clients had access to technology, design, and functionality seamlessly integrated into their projects.`,
+            tagline: `Determination — Every milestone achieved is proof of consistent effort.`,
+            img: "/images/about-images/2020.jpg"
+        },
+
+        {
+            year: 2021,
+            text: `We diversified further with the introduction of CRM solutions, cloud telephony, and dialer support services. These tools empowered businesses to manage communication more effectively, streamline customer interactions, and improve overall efficiency.`,
+            img: "/images/about-images/2021.jpg"
+        },
+
+        {
+            year: 2022,
+            text: `WishLan entered the realm of Artificial Intelligence, Machine Learning, and advanced cloud services. These innovations allowed us to support clients in automating processes, analyzing data with precision, and driving informed decision-making.`,
+            tagline: `Commitment — Challenges are temporary, persistence is permanent.`,
+            img: "/images/about-images/2022.jpg"
+        },
+
+        {
+            year: 2023,
+            text: `We strengthened our support services by introducing 24/7 technical assistance, Mail2Fax systems, and advanced workflow tools. Clients could now rely on WishLan not only for development and marketing but also for consistent technical reliability.`,
+            img: "/images/about-images/2023.jpg"
+        },
+
+        {
+            year: 2024,
+            text: `Our approach shifted towards deeper integration of automation and analytics across all projects. This change allowed clients to benefit from faster project cycles, transparent insights, and tailored reporting systems.`,
+            tagline: `Moving Ahead — Progress comes from adapting without losing direction.`,
+            img: "/images/about-images/2024.jpg"
+        },
+
+        {
+            year: 2025,
+            text: `WishLan continues to deliver client-focused solutions across web development, apps, marketing, AI, and technical support services. Each project is approached with persistence and dedication.`,
+            img: "/images/about-images/2025.jpg"
+        },
+
+        {
+            year: 2026,
+            text: `Our journey does not stop here. With continuous adaptation to new technologies and client expectations, WishLan remains dedicated to future milestones.`,
+            tagline: `Future Ready — The road ahead is built on dedication, trust, and vision.`,
+            img: "/images/about-images/2026.jpg"
+        }
+    ];
+
+
+    const yearTrack = document.getElementById("verticalYearTrack");
+    const eventContent = document.getElementById("verticalEventContent");
+
+    if (!yearTrack || !eventContent) return;
+
+    let activeIndex = 0;
+    const yearButtons = [];
+
+
+    function createYears() {
+
+        data.forEach(function(item, index) {
+
+            const yearItem = document.createElement("div");
+
+            yearItem.style.cssText = `
+                position:relative;
+                display:flex;
+                align-items:center;
+                min-height:75px;
+                cursor:pointer;
+                z-index:2;
+            `;
+
+
+            const dot = document.createElement("div");
+
+            dot.style.cssText = `
+                width:18px;
+                height:18px;
+                border-radius:50%;
+                border:3px solid #f5aa41;
+                background:#1c1e22;
+                margin-left:26px;
+                flex-shrink:0;
+                transition:0.3s ease;
+            `;
+
+
+            const year = document.createElement("div");
+
+            year.innerText = item.year;
+
+            year.style.cssText = `
+                margin-left:22px;
+                background:#2a2d31;
+                color:#ffffff;
+                padding:10px 18px;
+                border-radius:30px;
+                font-weight:700;
+                font-size:16px;
+                transition:0.3s ease;
+                min-width:80px;
+                text-align:center;
+            `;
+
+
+            yearItem.appendChild(dot);
+            yearItem.appendChild(year);
+
+
+            yearItem.addEventListener("click", function () {
+                selectYear(index);
+            });
+
+
+            yearTrack.appendChild(yearItem);
+
+
+            yearButtons.push({
+                container: yearItem,
+                dot: dot,
+                year: year
+            });
+
+        });
+
+    }
+
+
+    function showContent(index) {
+
+        const item = data[index];
+
+        eventContent.innerHTML = `
+
+            <div
+                style="
+                    display:flex;
+                    gap:35px;
+                    align-items:flex-start;
+                    flex-wrap:wrap;
+                "
+            >
+
+                <!-- TEXT -->
+                <div
+                    style="
+                        flex:1 1 450px;
+                    "
+                >
+
+                    <div
+                        style="
+                            color:#f5aa41;
+                            font-size:18px;
+                            font-weight:700;
+                            margin-bottom:10px;
+                        "
+                    >
+                        ${item.year}
+                    </div>
+
+
+                    <h3
+                        style="
+                            color:#ffffff;
+                            font-size:30px;
+                            margin:0 0 20px;
+                        "
+                    >
+                        Our Journey in ${item.year}
+                    </h3>
+
+
+                    <p
+                        style="
+                            color:#ffffff;
+                            font-size:16px;
+                            line-height:1.8;
+                            margin:0;
+                        "
+                    >
+                        ${item.text}
+                    </p>
+
+
+                    ${
+                        item.tagline
+                        ? `
+                            <p
+                                style="
+                                    margin-top:20px;
+                                    color:#f5aa41;
+                                    font-size:16px;
+                                    font-style:italic;
+                                    line-height:1.6;
+                                "
+                            >
+                                ${item.tagline}
+                            </p>
+                        `
+                        : ""
+                    }
+
+                </div>
+
+
+                <!-- IMAGE -->
+                <div
+                    style="
+                        flex:0 1 420px;
+                        width:100%;
+                    "
+                >
+
+                    <img
+                        src="${item.img}"
+                        alt="WishLan ${item.year}"
+                        style="
+                            width:100%;
+                            height:300px;
+                            object-fit:cover;
+                            border-radius:10px;
+                            display:block;
+                        "
+                    >
+
+                </div>
+
+            </div>
+
+        `;
+
+    }
+
+
+    function selectYear(index) {
+
+        activeIndex = index;
+
+
+        yearButtons.forEach(function(button, i) {
+
+            if (i === activeIndex) {
+
+                button.year.style.background = "#f5aa41";
+                button.year.style.color = "#1c1e22";
+                button.year.style.transform = "scale(1.08)";
+
+                button.dot.style.background = "#f5aa41";
+                button.dot.style.boxShadow =
+                    "0 0 15px rgba(245,170,65,0.8)";
+
+            } else {
+
+                button.year.style.background = "#2a2d31";
+                button.year.style.color = "#ffffff";
+                button.year.style.transform = "scale(1)";
+
+                button.dot.style.background = "#1c1e22";
+                button.dot.style.boxShadow = "none";
+
+            }
+
+        });
+
+
+        showContent(index);
+
+    }
+
+
+    createYears();
+    selectYear(0);
+
+});
+</script>
 
     <!-- Funfacts Section -->
     <section class="facts-section alternate">
@@ -1028,7 +1439,7 @@
         </div>
     </section>
 
-    <div data-include="/partials/footer.html"></div>
+    <div data-include="./partials/footer.html"></div>
 
     <a href="contact" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
@@ -1077,7 +1488,7 @@
 </script>
 
 <!-- Timeline script (unchanged logic) -->
-<script>
+<!-- <script>
 document.addEventListener('DOMContentLoaded', function () {
   const timelineContainer = document.querySelector('.company-timeline');
   if (!timelineContainer) return;
@@ -1191,7 +1602,7 @@ document.addEventListener('DOMContentLoaded', function () {
   selectYear(0);
   window.addEventListener('resize', updateTrackScroll);
 });
-</script>
+</script> -->
 
     <!-- Timeline Script END -->
 </body>
