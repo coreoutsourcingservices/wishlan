@@ -22,3 +22,13 @@ RewriteRule ^(.*)index(\.php|\.html)?$ /%1 [R=301,L]
 RewriteEngine On
 
 RewriteRule ^blog/([^/]+)/?$ /blog/bloge_detail.html [L]
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+# ADD THIS
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Tumhara existing code
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
