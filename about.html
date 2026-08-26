@@ -36,6 +36,30 @@
         gtag('config', 'G-S5SCGKL0JT');
     </script>
     <meta charset="utf-8">
+     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18105779909');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18105779909/caFGCOWX_eccEMWNwblD',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback
+      });
+
+      return false;
+    }
+  </script>
     <title>About WishLan Smart IT Solutions | Smart Digital Services</title>
     <meta name="description"
         content="WishLan Smart IT Solutions provides web & app development, CRM, cloud, AI/ML, and digital support services. Call 9355 388 555 for customized business solutions.">

@@ -17,7 +17,30 @@
 
         gtag('config', 'AW-18105779909');
     </script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18105779909');
 
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18105779909/caFGCOWX_eccEMWNwblD',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback
+      });
+
+      return false;
+    }
+  </script>
     <!-- Event snippet for White Label Partner Enquiry conversion -->
     <script>
         function gtag_report_conversion(url) {
@@ -388,7 +411,9 @@
                                 Phone
                             </strong>
 
-                            <a href="tel:+919355388555" style="
+                            <a href="tel:+919355388555"
+                            onclick="return gtag_report_conversion('tel:9355388555');"
+                            style="
                                 display:block;
                                 color:#6b7280;
                                 font-size:14px;

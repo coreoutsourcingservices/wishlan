@@ -26,6 +26,30 @@
             "url": "https://wishlan.com/"
         }
         </script>
+         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18105779909');
+
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18105779909/caFGCOWX_eccEMWNwblD',
+        'value': 1.0,
+        'currency': 'INR',
+        'event_callback': callback
+      });
+
+      return false;
+    }
+  </script>
     <meta charset="utf-8">
     <title>Smart IT Solutions Agency | Web Development & Digital Marketing</title>
     <meta name="description"
