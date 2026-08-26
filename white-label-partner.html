@@ -3,6 +3,38 @@
 
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18105779909');
+    </script>
+
+    <!-- Event snippet for White Label Partner Enquiry conversion -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18105779909/2D2sCIThyeccEMWNwblD',
+                'event_callback': callback
+            });
+
+            return false;
+        }
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
