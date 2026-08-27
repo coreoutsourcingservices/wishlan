@@ -313,12 +313,17 @@
         alert(data.message);
         if (response.ok && data.success) {
 
-        
+
           // uske baad GTM ko event bhejo
           window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({
             event: "enquiry_form_success"
           });
+          if (typeof gtag === "function") {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18105779909/RokgCl1gucEMWNbID'
+            });
+          }
         }
         btnText.innerHTML = "Send";
 
