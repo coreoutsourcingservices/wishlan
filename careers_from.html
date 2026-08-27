@@ -3,19 +3,19 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
 
-<script>
-  window.dataLayer = window.dataLayer || [];
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  function gtag(){
-    dataLayer.push(arguments);
-  }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-  gtag('js', new Date());
+        gtag('js', new Date());
 
-  gtag('config', 'AW-18105779909');
-</script>
+        gtag('config', 'AW-18105779909');
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -34,30 +34,30 @@
 
         gtag('config', 'G-S5SCGKL0JT');
     </script>
-     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-18105779909');
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-18105779909');
 
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+
+            gtag('event', 'conversion', {
+                'send_to': 'AW-18105779909/caFGCOWX_eccEMWNwblD',
+                'value': 1.0,
+                'currency': 'INR',
+                'event_callback': callback
+            });
+
+            return false;
         }
-      };
-
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18105779909/caFGCOWX_eccEMWNwblD',
-        'value': 1.0,
-        'currency': 'INR',
-        'event_callback': callback
-      });
-
-      return false;
-    }
-  </script>
+    </script>
     <meta charset="utf-8">
 
     <title>Wishlan - A Smart Web Design Agency | Services</title>
@@ -338,7 +338,7 @@
 
                         <!-- Submit -->
                         <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-                            <button type="submit"  class="theme-btn btn-style-one">
+                            <button type="submit" class="theme-btn btn-style-one">
                                 <i class="btn-curve"></i>
                                 <span class="btn-title">Apply Now</span>
                             </button>
@@ -363,68 +363,72 @@
         </div>
     </div>
 
-   <script>
-async function submitCareerForm(event) {
+    <script>
+        async function submitCareerForm(event) {
 
-    event.preventDefault();
+            event.preventDefault();
 
-    const form = document.getElementById("careerForm");
-    const formData = new FormData(form);
+            const form = document.getElementById("careerForm");
+            const formData = new FormData(form);
 
 
 
-    try {
+            try {
 
-        const response = await fetch(
-            "https://pk.coreoutsourcingservices.in/wishlan/career-form",
-            {
-                method: "POST",
-                body: formData
+                const response = await fetch(
+                    "https://pk.coreoutsourcingservices.in/wishlan/career-form",
+                    {
+                        method: "POST",
+                        body: formData
+                    }
+                );
+
+                const data = await response.json();
+
+                if (data.success) {
+
+                    showPopup(
+                        "Success",
+                        data.message || "Application submitted successfully."
+                    );
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        event: "enquiry_form_success"
+                    });
+
+                    form.reset();
+
+                } else {
+
+                    showPopup(
+                        "Error",
+                        data.message || "Something went wrong."
+                    );
+                }
+
+            } catch (error) {
+
+                // console.log(error);
+
+                showPopup(
+                    "Error",
+                    "Server connection failed."
+                );
             }
-        );
-
-        const data = await response.json();
-
-        if (data.success) {
-
-            showPopup(
-                "Success",
-                data.message || "Application submitted successfully."
-            );
-
-            form.reset();
-
-        } else {
-
-            showPopup(
-                "Error",
-                data.message || "Something went wrong."
-            );
         }
 
-    } catch (error) {
+        function showPopup(title, message) {
 
-        // console.log(error);
+            document.getElementById("popupTitle").innerText = title;
+            document.getElementById("popupMessage").innerText = message;
 
-        showPopup(
-            "Error",
-            "Server connection failed."
-        );
-    }
-}
+            document.getElementById("popupOverlay").style.display = "flex";
+        }
 
-function showPopup(title, message) {
-
-    document.getElementById("popupTitle").innerText = title;
-    document.getElementById("popupMessage").innerText = message;
-
-    document.getElementById("popupOverlay").style.display = "flex";
-}
-
-function closePopup() {
-    document.getElementById("popupOverlay").style.display = "none";
-}
-</script>
+        function closePopup() {
+            document.getElementById("popupOverlay").style.display = "none";
+        }
+    </script>
 
 
 

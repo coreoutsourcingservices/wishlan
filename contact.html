@@ -4,29 +4,29 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag(){
-    dataLayer.push(arguments);
-  }
-
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18105779909');
-</script>
- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18105779909');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18105779909"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'AW-18105779909');
 
     function gtag_report_conversion(url) {
       var callback = function () {
-        if (typeof(url) != 'undefined') {
+        if (typeof (url) != 'undefined') {
           window.location = url;
         }
       };
@@ -159,7 +159,8 @@
       <div class="side-menu__content">
         <p>Welcome to Wishlan - a smart web design agency! Elevate your brand with creative innovation and tailored
           solutions. Let's shape success together.</p>
-        <p><a href="mailto:support@wishlan.com">support@wishlan.com</a> <br> <a href="tel:9355388555" onclick="return gtag_report_conversion('tel:9355388555');">9355 388 555</a>
+        <p><a href="mailto:support@wishlan.com">support@wishlan.com</a> <br> <a href="tel:9355388555"
+            onclick="return gtag_report_conversion('tel:9355388555');">9355 388 555</a>
         </p>
         <div class="side-menu__social">
           <a href="https://www.facebook.com/profile.php?id=61558829790231" class="fab fa-facebook"></a>
@@ -310,6 +311,15 @@
         const data = await response.json();
 
         alert(data.message);
+        if (response.ok && data.success) {
+
+        
+          // uske baad GTM ko event bhejo
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "enquiry_form_success"
+          });
+        }
         btnText.innerHTML = "Send";
 
         document.getElementById("contact-form").reset();
