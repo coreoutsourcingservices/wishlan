@@ -16,8 +16,10 @@
         gtag('js', new Date());
 
         gtag('config', 'AW-18105779909');
+        gtag('config', 'G-S5SCGKL0JT');
     </script>
-   
+
+    <!-- Event snippet for White Label Partner Enquiry conversion -->
     <!-- Event snippet for White Label Partner Enquiry conversion -->
     <script>
         function gtag_report_conversion(url) {
@@ -45,14 +47,7 @@
       }
     </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5SCGKL0JT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-S5SCGKL0JT');
-    </script>
     <meta charset="utf-8">
     <title>Contact WishLan | Get in Touch with Best IT & Design Experts</title>
     <meta name="description"
@@ -1150,6 +1145,11 @@
     <!-- FORM API SCRIPT -->
     <!-- ====================================================== -->
 
+
+    <!-- ====================================================== -->
+    <!-- FORM API SCRIPT -->
+    <!-- ====================================================== -->
+
     <script>
 
         document.addEventListener("DOMContentLoaded", function () {
@@ -1168,6 +1168,46 @@
                 return;
             }
 
+            let isSubmitting = false;
+
+            function waitForNextPaint() {
+                return new Promise(function (resolve) {
+                    requestAnimationFrame(function () {
+                        requestAnimationFrame(resolve);
+                    });
+                });
+            }
+
+            function fireLeadConversionOnce() {
+                return new Promise(function (resolve) {
+                    if (typeof window.gtag !== "function") {
+                        resolve(false);
+                        return;
+                    }
+
+                    let finished = false;
+
+                    function finish(result) {
+                        if (finished) return;
+                        finished = true;
+                        resolve(result);
+                    }
+
+                    window.gtag('event', 'conversion', {
+                        'send_to': 'AW-18105779909/RokgClq1gugcEMWNwbID',
+                        'event_callback': function () {
+                            finish(true);
+                        },
+                        'event_timeout': 2000
+                    });
+
+                    /* Do not freeze the form if the callback is blocked. */
+                    setTimeout(function () {
+                        finish(false);
+                    }, 2500);
+                });
+            }
+
 
 
             contactForm.addEventListener(
@@ -1175,6 +1215,10 @@
                 async function (event) {
 
                     event.preventDefault();
+
+                    if (isSubmitting) {
+                        return;
+                    }
 
 
 
@@ -1290,6 +1334,9 @@
 
 
 
+                    isSubmitting = true;
+                    let conversionSentForThisSubmission = false;
+
                     try {
 
                         /* ===================================== */
@@ -1364,7 +1411,7 @@
 
 
 
-                        if (data.success) {
+                        if (data.success === true) {
 
                             showStatus(
 
@@ -1374,13 +1421,18 @@
                                 "success"
 
                             );
-                            if (typeof gtag === "function") {
-                                gtag('event', 'conversion', {
-                                    'send_to': 'AW-18105779909/RokgClq1gugcEMWNwbID'
-                                });
+
+                            /*
+                             * Required order:
+                             * API success -> success message rendered
+                             * -> one Google Ads conversion -> form reset.
+                             */
+                            await waitForNextPaint();
+
+                            if (!conversionSentForThisSubmission) {
+                                conversionSentForThisSubmission = true;
+                                await fireLeadConversionOnce();
                             }
-
-
 
                             contactForm.reset();
 
@@ -1417,6 +1469,8 @@
 
 
                     } finally {
+
+                        isSubmitting = false;
 
                         submitButton.disabled = false;
 
