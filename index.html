@@ -28,9 +28,6 @@
     </script>
 
     <script>
-       
-
-
         function gtag_report_conversion(url) {
             var callback = function () {
                 if (typeof (url) != 'undefined') {
@@ -54,8 +51,6 @@
         content="WishLan – A Smart IT Solutions Agency providing Web Development, Mobile Apps, Digital Marketing, CRM, Cloud, AI & Call Centre Solutions. Call 9355 388 555 today!.">
     <meta name="keywords"
         content="IT services, Information technology, IT consulting, IT solutions, Cloud computing services, IT support, Software development, Data analytics, IT infrastructure, Healthcare IT services, Financial IT solutions, Retail IT support, Education technology services, IT services in Noida, IT services in Uttar Pradesh, IT services in Delhi/NCR, Noida IT consulting, Managed IT services Noida, IT support Noida, Best IT consulting firms for small businesses, Wishlan IT solutions, Wishlan managed services, How to choose the right IT service provider, Benefits of managed IT services for small businesses, IT services India, Best IT consulting firms in Noida, Affordable network management solutions, Software development services in Noida, Managed IT services provider Noida, Technology solutions, Business IT services, Managed IT solutions Noida, Enterprise software development, IT support in Uttar Pradesh, Best IT company in Noida, Top-rated IT support for small businesses, Cloud infrastructure management for large enterprises, Affordable IT maintenance services for startups, Affordable web application development for small businesses, Enterprise software solutions for logistics companies, Best network setup services for new offices, ERP software development, Custom CRM development, tech solution, it services company, it consulting companies in india, IT Company in Noida, IT Company in uttar Pradesh, IT company in Delhi NCR, e commerce website development company, affordable it company, website design company, website development company, web development company, web dev company, website devopment company in Noida, web development company in Noida, websites designers , website creation company, website design for company, web design and web development, website design and website development, web design company near me, website design company near me, IT company near me, best website development company, top web development company, top web development agency, top website development agency, digital marketing agency website, ui and ux company, graphic design agency near me, graphic design agency in Noida, graphic design agency in uttar pradesh, graphic design agency in delhi ncr, seo and web design services, web development company in noida sector 63, IT company in Noida sector 63, digital marketing services, technology company, tech company, tech company in Noida sector 63">
-
-
     <meta
         content="Web & Mobile Application Solution Provider - WISHLAN |  What is web development and mobile development | What web services are used by mobile | Which is the No 1 software company in world | Which country is no 1 in software development | Which company is best for software development | Which is the top 10 IT company | International software development companies in india | top 10 software development companies world | International software development companies list | Top international software development companies | custom software development companies | custom software development companies in india | best software development companies to work for WISHLAN | top software development companies in india | What is web app Development Services | What is mobile app development service | Top Mobile App Development Company in Canada | Top 30+ Mobile App Development Companies in Canada, Top 10 Mobile App Development Companies | Best Mobile App Development Companies in 2024 | Mobile App Development Services in Canada and USA, MLM Software Development Services in Canada and USA, Mobile App Development Services Ontario and Canada | Best Mobile App Development Agencies in Canada | Mobile Application Development | MLM Software Development | Best Network Marketing Growth Tools | React JS- Complete Guide for Frontend Web Development | Front End Web Development with React | React Native for Android Development | Angular js Development Company | Using Laravel for E-Commerce | ECommerce Laravel PHP Scripts | Vue.js Development Company | Ecommerce Website Development | Multi-Level Marketing Plan | Binary MLM Plan | Force Matrix MLM Plan | Unilevel MLM Plan | Board MLM Plan with WooCommerce | Monoline MLM Plan | MLM Software | WISHLAN MLM Software | Android Mobile App Developer Tools | Android App Development | What is Mobile Development | Mobile App Development Process: Step-by-Step Guide for 2023 | Develop an App in 9 Easy Steps (2023 Guide) - WISHLAN | Multi-Level Marketing Businesses and Pyramid Schemes | MLM Software Company | Build E-Commerce Website in Laravel | Best eCommerce Websites Built With Laravel | Laravel eCommerce Native Mobile App | Build and Deploy E-commerce Website with Laravel and Vue.js | Build eCommerce website using Laravel | Mobile App Development Company | Create a Dating Applications - Mobile Apps Development | Dating App Development | Laravel eCommerce Progressive Web Application | MLM & eCommerce Business | Binary MLM Plan | Unilevel MLM Plan | Board MLM Plan | Monoline MLM Plan | Force Matrix MLM Plan | REST API with WooCommerce |  Multi-Level Marketing [MLM] eCommerce Websites | Customize Affiliate eCommerce website MLM Program | MLM Affiliate Management Plugin | Multilevel Network Marketing Software | Customize Affiliate MLM Extension or Plugins | Affiliate MLM E-commerce Website Design & Development | MLM Software | Multi-Level Marketing Downstream Affiliate Commission Calculator | MLM Software CMS Integration Services | MLM Plan | MLM tree | MLm eCommerce Affiliate Program | Free Demo MLM Software | MLM Plugins | MLM Affiliate Program | MLM Rest API | Free Demo"
         name="title">
@@ -79,7 +74,6 @@
 
     <!--  Critical CSS (ye sab page ke render ke liye zaroori hai) -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css?v=2">
     <link rel="stylesheet" href="css/style.css?v=2">
 
     <!-- Non-Critical CSS ko async/preload karo -->
@@ -138,10 +132,26 @@
         <link rel="stylesheet" href="css/rtl.css">
     </noscript>
 
-    <link rel="preload" href="css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="css/responsive.css">
-    </noscript>
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .page-wrapper { min-width: 0; }
+        #cos-websites-showcase { background: radial-gradient(ellipse at 100% 0%,rgba(243,153,0,.09),transparent 48%),#161616 !important; }
+        #cos-websites-showcase .websites-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap:22px !important; }
+        #cos-websites-showcase .website-card { display:flex !important; flex-direction:column; border-color:#39332a !important; background:#202020 !important; transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+        #cos-websites-showcase .website-card > img { position:relative !important; inset:auto !important; height:170px !important; flex-shrink:0; object-position:top; background:#292929; border-bottom:1px solid #39332a; }
+        #cos-websites-showcase .website-card > div[aria-hidden] { display:none; }
+        #cos-websites-showcase .card-content { margin-top:0 !important; flex:1; padding:20px 16px !important; align-items:center; background:linear-gradient(135deg,#25231f,#1c1c1c); }
+        #cos-websites-showcase .card-content > img.logo-dark { background:#17191f !important; }
+        #cos-websites-showcase .card-copy h3 { font-size:16px !important; text-shadow:none !important; }
+        #cos-websites-showcase .card-copy p { color:#c5c0b8 !important; text-shadow:none !important; }
+        #cos-websites-showcase .card-content > span { width:30px !important; height:30px !important; border-color:rgba(243,153,0,.4) !important; color:#f39900 !important; background:rgba(243,153,0,.08) !important; }
+        #cos-websites-showcase a.website-card:focus-visible { outline:3px solid #f39900; outline-offset:4px; }
+        @media (hover:hover) { #cos-websites-showcase a.website-card:hover { transform:translateY(-5px); border-color:#f39900 !important; box-shadow:0 16px 32px rgba(0,0,0,.35) !important; } }
+        @media (max-width:1199px) { #cos-websites-showcase .websites-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+        @media (max-width:899px) { #cos-websites-showcase .websites-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px !important; } }
+        @media (max-width:559px) { #cos-websites-showcase .websites-grid { grid-template-columns:minmax(0,1fr); } #cos-websites-showcase .website-card > img { height:190px !important; } }
+        @media (prefers-reduced-motion:reduce) { #cos-websites-showcase .website-card { transition:none; } }
+    </style>
 
     <!-- Color CSS (theme file) -->
     <link rel="stylesheet" id="jssDefault" href="css/colors/color-default.css">
@@ -153,7 +163,7 @@
 
     <!-- Responsive Settings -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="Jyp6HL4PnXVrCmwkzs4eFUjGcfbXD6PoO0VbthFA4hU" />
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
@@ -165,6 +175,9 @@
     <!-- Elfsight Google Reviews -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
 
+    <!-- Whole-page desktop scaling; mobile keeps its existing responsive layout. -->
+    <link rel="stylesheet" href="css/desktop-layout.css">
+    <script src="js/desktop-layout.js" defer></script>
 </head>
 
 <body class="body-dark">
@@ -541,6 +554,266 @@
             </div>
         </section>
 
+        <!-- Website showcase: local screenshots and logos. -->
+<div id="cos-websites-showcase" style="width:100%;box-sizing:border-box;background:radial-gradient(ellipse at 95% 100%,rgba(116,53,146,.14),transparent 38%),#161616;padding:60px 18px 70px;color:white;font-family:Arial,Helvetica,sans-serif;overflow:hidden;">
+  <div style="width:100%;max-width:1420px;box-sizing:border-box;margin:0 auto;">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:28px;">
+      <div style="flex:1 1 520px;min-width:0;">
+        <div style="display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:2px;color:#b7b2b1;margin-bottom:10px;"><span>PROJECTS</span><span style="display:block;width:52px;height:2px;background:#f39900;"></span></div>
+        <h2 style="margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(38px,5.6vw,66px);line-height:1.08;font-weight:700;letter-spacing:-1px;color:white;">Our <span style="color:#f39900;">Work</span></h2>
+        <p style="color:#c6c0c0;max-width:690px;line-height:1.58;font-size:clamp(14px,1.35vw,17px);margin:0;">Explore our websites, digital platforms and creative projects — built to connect people, support businesses and bring ideas to life.</p>
+      </div>
+      <!-- Design preview only: replace this DIV with an A tag after you supply your login URL. -->
+
+    </div>
+    <div class="websites-grid" style="width:100%;display:grid;gap:18px;">
+      <a class="website-card" href="https://hivrasoft.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Hirasoft website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/hivrasoft2.png" loading="lazy" alt="Hirasoft website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/image.png" alt="Hirasoft logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Hirasoft</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Software solutions for a smarter tomorrow.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="http://hastkundli.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Hastikundi website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/web hashkundli.png" loading="lazy" alt="Hastikundi website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/hastkundli-logo.png" alt="Hastikundi logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Hastikundi</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Tradition, spirituality and a better tomorrow.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="http://amritgita.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Amrit Gita website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/amritgitaweb.png" loading="lazy" alt="Amrit Gita website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/amritgita-logo.webp" alt="Amrit Gita logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Amrit Gita</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Timeless wisdom for modern life.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://ch8t.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit ch8t.in website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/ch8tweb.png" loading="lazy" alt="ch8t.in website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/Glossy Thumbs-Up App Icon.png" alt="ch8t.in logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">ch8t.in</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Chat smarter. Connect faster.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://1klick.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit 1 Click website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/1kickweb.png" loading="lazy" alt="1 Click website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/Minimalist 1klick Wordmark Logo.png" alt="1 Click logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">1 Click</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Quick solutions, just 1 click away.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://library.wishlan.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Library website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/library.png" loading="lazy" alt="Library website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img class="logo-dark" src="./meke-web/logo/library.png" alt="Library logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Library</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Online library management and member access.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://naturalherbalproducts.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Natural Herbal Products website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/naturalherbalproducts.png" loading="lazy" alt="Natural Herbal Products website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/naturalherbalproducts-original.png" alt="Natural Herbal Products logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Natural Herbal Products</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Herbal cleaning solutions for homes and businesses.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://golaitdragonfarm.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Golait Dragon Farm website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/golaitdragonfarm.png" loading="lazy" alt="Golait Dragon Farm website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/golaitdragonfarm.png" alt="Golait Dragon Farm logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Golait Dragon Farm</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Fresh dragon fruit and sustainable farming.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://saicontrolsystem.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Sai Control System website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/saicontrolsystem.png" loading="lazy" alt="Sai Control System website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/saicontrolsystem.png" alt="Sai Control System logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Sai Control System</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Industrial control systems and monitoring solutions.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://harshufashion.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Harshu Fashion website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/harshufashion.png" loading="lazy" alt="Harshu Fashion website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/harshufashion-original.png" alt="Harshu Fashion logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Harshu Fashion</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Swimwear, menswear and fashion accessories.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://abpenterprises.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit ABP Enterprises website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/abpenterprises.png" loading="lazy" alt="ABP Enterprises website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/abpenterprises.png" alt="ABP Enterprises logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">ABP Enterprises</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Conveyor belts for industrial applications.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://pathshalalibrary.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Pathshala Library website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/pathshalalibrary.png" loading="lazy" alt="Pathshala Library website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img class="logo-dark" src="./meke-web/logo/pathshalalibrary.png" alt="Pathshala Library logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Pathshala Library</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">A space for reading, learning and growing.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://momandson.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mom and Son website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/momandson.png" loading="lazy" alt="Mom and Son website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/momandson.png" alt="Mom and Son logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Mom and Son</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Baby care and household essentials.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://aryangeneralstore.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Ayan General Store website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/aryangeneralstore.png" loading="lazy" alt="Ayan General Store website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/aryangeneralstore.png" alt="Ayan General Store logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Ayan General Store</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Daily essentials and personal care products.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://shreekrishnaindustries.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Shree Krishna Industries website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/shreekrishnaindustries.png" loading="lazy" alt="Shree Krishna Industries website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/shreekrishnaindustries.png" alt="Shree Krishna Industries logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Shree Krishna Industries</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Guar gum and tamarind kernel products.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://fairdealenterprises.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fairdeal Enterprises website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/fairdealenterprises.png" loading="lazy" alt="Fairdeal Enterprises website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/fairdealenterprises-original.jpg" alt="Fairdeal Enterprises logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Fairdeal Enterprises</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Leather bags, travel gear and corporate gifts.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://itsybitsy.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Itsy Bitsy website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/itsybitsy.png" loading="lazy" alt="Itsy Bitsy website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/itsybitsy-original.jpg" alt="Itsy Bitsy logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Itsy Bitsy</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Art and craft supplies for creative minds.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://marutielectronics.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Maruti Electronics website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/marutielectronics.png" loading="lazy" alt="Maruti Electronics website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/marutielectronics-original.png" alt="Maruti Electronics logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Maruti Electronics</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Home appliances and furniture solutions.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://bssit.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit BSSIT website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/bssit.png" loading="lazy" alt="BSSIT website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/bssit-original.png" alt="BSSIT logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">BSSIT</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">IT hardware, software and business solutions.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://mohanadsfashion.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mohana DS Fashion website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/mohanadsfashion.png" loading="lazy" alt="Mohana DS Fashion website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/mohanadsfashion.png" alt="Mohana DS Fashion logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Mohana DS Fashion</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Handmade jewellery and fashion accessories.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://artgallery.wishlan.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Art Gallery website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/artgallery.svg" loading="lazy" alt="Illustration of framed paintings in an art gallery" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img class="logo-dark" src="images/wishlan-logo.png" alt="Art Gallery logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Art Gallery</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Discover paintings, creativity and original art.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://jaiswalelectronic.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Jaiswal Electronic website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/jaiswalelectronic.png" loading="lazy" alt="Jaiswal Electronic website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/jaiswalelectronic-original.jpg" alt="Jaiswal Electronic logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Jaiswal Electronic</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Home electronics and kitchen appliances.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://rajbrushfactory.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Raj Brush Factory website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/rajbrushfactory.png" loading="lazy" alt="Raj Brush Factory website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/rajbrushfactory-original.png" alt="Raj Brush Factory logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Raj Brush Factory</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Cleaning brushes and specialty tools.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://mahakfurniture.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Mahak Furniture website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/mahakfurniture.png" loading="lazy" alt="Mahak Furniture website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/mahakfurniture.png" alt="Mahak Furniture logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Mahak Furniture</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Solid wood furniture for comfortable homes.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://svsexim.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit SVS Exim website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/svsexim.png" loading="lazy" alt="SVS Exim website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/svsexim-original.jpg" alt="SVS Exim logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">SVS Exim</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Fresh fruits, vegetables and agricultural exports.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://madhuveboutique.wishlan.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Madhuve Boutique website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/madhuveboutique.png" loading="lazy" alt="Madhuve Boutique website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/madhuveboutique-original.jpg" alt="Madhuve Boutique logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Madhuve Boutique</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Ethnic wear and contemporary women’s fashion.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+      <a class="website-card" href="https://techwin.wishlan.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Techwin website (opens in a new tab)" style="position:relative;display:block;isolation:isolate;overflow:hidden;border:1px solid #45404b;border-radius:18px;min-width:0;min-height:235px;box-sizing:border-box;background:#161616;box-shadow:0 10px 23px rgba(0,0,0,.28);text-decoration:none;">
+        <img src="./meke-web/webphoto/techwin.png" loading="lazy" alt="Techwin website screenshot" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;display:block;">
+        <div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,14,23,.02) 0%,rgba(12,14,23,.08) 38%,rgba(12,14,23,.78) 68%,rgba(12,14,23,.98) 100%);"></div>
+        <div class="card-content" style="position:relative;z-index:1;display:flex;align-items:center;gap:12px;padding:18px 14px;box-sizing:border-box;margin-top:120px;">
+          <img src="./meke-web/logo/techwin-original.png" alt="Techwin logo" loading="lazy" width="55" height="55" style="width:55px;height:55px;flex-shrink:0;object-fit:contain;border-radius:50%;border:2px solid #f39900;box-sizing:border-box;background:white;padding:3px;">
+          <div class="card-copy" style="flex:1;min-width:0;overflow-wrap:anywhere;"><h3 style="color:white;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.25;font-weight:700;margin:2px 0 7px;text-shadow:0 1px 4px #000;">Techwin</h3><p style="color:#f0edf4;font-size:12.5px;line-height:1.45;margin:0;text-shadow:0 1px 5px rgba(0,0,0,.9);">Fiber lasers, photonics and optical solutions.</p></div>
+          <span aria-hidden="true" style="width:36px;height:36px;display:flex;flex-shrink:0;align-items:center;justify-content:center;background:rgba(15,17,24,.65);border:1px solid rgba(255,255,255,.6);border-radius:50%;font-size:20px;color:white;">&#8594;</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
         <section class="sponsors-section sponsors-section__dark">
             <div class="sponsors-outer">
                 <div class="sec-title bl-title">
@@ -624,7 +897,7 @@
                         </div>
                         <div class="slide-item">
                             <figure class="image-box">
-                                <a"><img src="images/clients/system-automation-logo.jpeg"
+                                <a><img src="images/clients/system-automation-logo.jpeg"
                                         alt="system-automation-logo"></a>
                             </figure>
                             <h6>Systems Automation</h6>
@@ -637,7 +910,7 @@
                         </div>
                         <div class="slide-item">
                             <figure class="image-box"><a><img
-                                        src="https://hivrasoft.com/wp-content/uploads/2026/02/cropped-short-scaled-1-300x115.jpg.webp"
+                                        src="images/clients/Hivra Soft Logoo.png"
                                         alt="harshu-logo"></a>
                             </figure>
                             <h6>Hivra Soft</h6>
@@ -1393,13 +1666,10 @@
         <div data-include="partials/footer.html"></div>
         <a href="contact" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
-
-
         <!-- Core JS -->
         <script src="js/jquery.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-
         <!-- plugins BEFORE custom-script -->
         <script src="js/TweenMax.js"></script>
         <script src="js/owl.js"></script> <!-- must load here -->
@@ -1440,6 +1710,4 @@
 
         <!--End of Tawk.to Script-->
 </body>
-
-
 </html>

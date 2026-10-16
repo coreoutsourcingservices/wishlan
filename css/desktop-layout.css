@@ -1,0 +1,9 @@
+/* Applied only by desktop-layout.js on desktop mouse/trackpad devices. */
+html.desktop-layout {
+    zoom: var(--desktop-layout-scale, 1);
+}
+html.desktop-layout body {
+    width: 1366px;
+    min-width: 0;
+    margin-inline: auto;
+}
