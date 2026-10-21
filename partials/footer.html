@@ -1,34 +1,151 @@
-<!-- Main Footer -->
+
+<!-- ========================================== -->
+<!-- WISHLAN FOOTER - FINAL UPDATED CODE -->
+<!-- ========================================== -->
+
+<style>
+  /* ======================================
+     CONTACT ALIGNMENT
+  ====================================== */
+
+  .footer-nine__contact {
+    --contact-alignment: 32px;
+  }
+
+  /* Align CONTACT and company names */
+  .footer-nine__contact > .footer-nine__widget__title,
+  .footer-nine__contact > .footer-nine__contact__company {
+    margin-left: var(--contact-alignment) !important;
+  }
+
+  .footer-nine__contact__company {
+    margin-bottom: 0;
+  }
+
+  .footer-nine__contact__company .footer-heading {
+    line-height: 1.5;
+  }
+
+  /* ======================================
+     COMPANY NAME - SINGLE LINE FIX
+  ====================================== */
+
+  .footer-nine__contact__company .company-name {
+    font-size: 14px !important;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    margin-bottom: 8px;
+  }
+
+  .footer-nine__contact .company-website-link {
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+  }
+
+  .footer-nine__contact .company-website-link:hover {
+    color: #FFD700 !important;
+  }
+
+  /* Prevent company name from breaking on desktop */
+  @media (min-width: 992px) {
+    .footer-nine__contact__company .company-name {
+      font-size: clamp(11px, 1vw, 14px) !important;
+      white-space: nowrap !important;
+    }
+
+    .footer-nine__contact .company-website-link {
+      white-space: nowrap !important;
+    }
+  }
+
+  /* Tablet and Mobile */
+  @media (max-width: 991px) {
+    .footer-nine__contact__company .company-name {
+      font-size: 14px !important;
+      white-space: normal !important;
+    }
+
+    .footer-nine__contact .company-website-link {
+      white-space: normal !important;
+    }
+  }
+
+  /* ======================================
+     GOLDEN COPYRIGHT SYMBOL
+  ====================================== */
+
+  .footer-nine__copyright .copyright-highlight {
+    color: #FFD700 !important;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 3px;
+    text-shadow: 0 0 5px rgba(255,215,0,0.25);
+  }
+
+  /* Copyright Company Link */
+  .footer-nine__copyright .copyright-company-link {
+    color: inherit !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+  }
+
+  .footer-nine__copyright .copyright-company-link:hover {
+    color: #FFD700 !important;
+  }
+</style>
+
+
+<!-- ========================================== -->
+<!-- MAIN FOOTER -->
+<!-- ========================================== -->
+
 <footer class="footer-nine">
   <div class="auto-container">
     <div class="row">
+
+      <!-- LOGO & DESCRIPTION -->
       <div class="col-md-12 col-lg-4">
         <div class="footer-nine__widget footer-nine__subscribe">
-          <div class="logo" style="margin-bottom: 15px">
-            <a href="/"
-              ><img
+
+          <div class="logo" style="margin-bottom: 15px;">
+            <a href="/">
+              <img
                 id="fLogo"
                 src="/images/wishlanlogo.png"
-                alt="wishlanlogo"
+                alt="WishLan Logo"
                 width="200"
                 height="100"
-            /></a>
+              />
+            </a>
           </div>
+
           <p class="footer-nine__subscribe__text">
-            Welcome to WishLan Agency - Smart IT Solutions! We'll collaborate to
-            attain sustained success.
+            Welcome to WishLan Agency - Smart IT
+            Solutions! We'll collaborate to attain
+            sustained success.
           </p>
-          <!-- /.footer-nine__subscribe__text -->
+
         </div>
-        <!-- /.footer-nine__widget footer-nine__subscribe -->
       </div>
-      <!-- /.col-md-12 -->
+
+
+      <!-- EXPLORE & LEGAL -->
       <div class="col-md-12 col-lg-5">
         <div class="footer-nine__widget footer-nine__links">
           <div class="row">
+
+            <!-- EXPLORE -->
             <div class="col-md-6 col-lg-6">
-              <h4 class="footer-nine__widget__title">Explore</h4>
-              <!-- /.footer-nine__widget__title -->
+
+              <h4 class="footer-nine__widget__title">
+                Explore
+              </h4>
+
               <ul class="list-unstyled footer-nine__links__list">
                 <li><a href="/index">Home</a></li>
                 <li><a href="/about">About</a></li>
@@ -36,101 +153,215 @@
                 <li><a href="/careers">Careers</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
-              <!-- /.list-unstyled footer-nine__links__list -->
+
             </div>
-            <!-- /.col-md-6 col-lg-6 -->
+
+            <!-- LEGAL -->
             <div class="col-md-6 col-lg-6">
-              <h4 class="footer-nine__widget__title">legal</h4>
-              <!-- /.footer-nine__widget__title -->
+
+              <h4 class="footer-nine__widget__title">
+                Legal
+              </h4>
+
               <ul class="list-unstyled footer-nine__links__list">
-                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                <li><a href="/terms-condition">Terms & Conditions</a></li>
+
                 <li>
-                  <a href="/return-and-cancellations">Return & Cancellations</a>
+                  <a href="/privacy-policy">
+                    Privacy Policy
+                  </a>
                 </li>
-                <li><a href="/disclaimer">Disclaimer</a></li>
+
+                <li>
+                  <a href="/terms-condition">
+                    Terms & Conditions
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/return-and-cancellations">
+                    Return & Cancellations
+                  </a>
+                </li>
+
+                <li>
+                  <a href="/disclaimer">
+                    Disclaimer
+                  </a>
+                </li>
+
               </ul>
-              <!-- /.list-unstyled footer-nine__links__list -->
+
             </div>
-            <!-- /.col-md-6 col-lg-6 -->
+
           </div>
-          <!-- /.row -->
         </div>
-        <!-- /.footer-nine__widget footer-nine__links -->
       </div>
-      <!-- /.col-md-12 -->
+
+
+      <!-- ================================= -->
+      <!-- CONTACT SECTION -->
+      <!-- ================================= -->
+
       <div class="col-md-12 col-lg-3">
+
         <div class="footer-nine__widget footer-nine__contact">
-          <h4 class="footer-nine__widget__title">contact</h4>
-          <!-- /.footer-nine__widget__title -->
-          <h6 class="footer-heading">WishLan</h6>
-          <h6 class="footer-heading">Core Outsourcing Services Pvt. Ltd.</h6>
+
+          <!-- CONTACT HEADING -->
+          <h4 class="footer-nine__widget__title">
+            Contact
+          </h4>
+
+          <!-- COMPANY DETAILS -->
+          <div class="footer-nine__contact__company">
+
+            <h6 class="footer-heading">
+              WishLan
+            </h6>
+
+            <!-- SINGLE-LINE COMPANY NAME -->
+            <h6 class="footer-heading company-name">
+              <a
+                href="https://www.coreoutsourcingservices.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="company-website-link"
+                title="Visit Core Outsourcing Services"
+              >Core Outsourcing Services Pvt.&nbsp;Ltd.</a>
+            </h6>
+
+          </div>
+
+          <!-- CONTACT INFORMATION -->
           <ul class="footer-nine__contact__list">
+
+            <!-- ADDRESS -->
             <li>
               <i class="fa fa-map-marker"></i>
-              <a href="https://maps.app.goo.gl/u74HCPs7YawMWswF7"
-                >E 2, Sector 63, Noida</a
+
+              <a
+                href="https://maps.app.goo.gl/u74HCPs7YawMWswF7"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                E 2, Sector 63, Noida
+              </a>
             </li>
+
+            <!-- EMAIL -->
             <li>
               <i class="fa fa-envelope"></i>
-              <a href="support@wishlan.com">support@wishlan.com</a>
+
+              <a href="mailto:support@wishlan.com">
+                support@wishlan.com
+              </a>
             </li>
+
+            <!-- PHONE -->
             <li>
               <i class="fa fa-phone"></i>
+
               <a
                 href="https://wa.me/919355388555"
-                onclick="return gtag_report_conversion('tel:9355388555');"
-                style="color: inherit; "
+                style="color: inherit;"
               >
                 9355 388 555
               </a>
-
             </li>
+
+            <!-- TEAMS -->
             <li>
               <i class="fab fa-skype"></i>
+
               <a
-                href="https://teams.live.com/l/contact-sync/wishlansmartitsolutions@gmail.com?claimCode=00:05:00&maxContacts=2000&launchAgent=react-native-windows&laEntry=copyLink"
-                >Wishlan Smart IT Solutions</a
+                href="https://teams.live.com/l/contact-sync/wishlansmartitsolutions@gmail.com?claimCode=00:05:00&amp;maxContacts=2000&amp;launchAgent=react-native-windows&amp;laEntry=copyLink"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                Wishlan Smart IT Solutions
+              </a>
             </li>
+
           </ul>
-          <!-- /.footer-nine__contact__list -->
+
         </div>
-        <!-- /.footer-nine__widget -->
       </div>
-      <!-- /.col-md-12 -->
+
     </div>
-    <!-- /.row -->
   </div>
-  <!-- /.auto-container -->
 </footer>
-<!-- /.footer-nine -->
+
+
+<!-- ========================================== -->
+<!-- FOOTER BOTTOM -->
+<!-- ========================================== -->
+
 <div class="footer-nine__bottom">
   <div class="auto-container">
-   <p class="footer-nine__copyright"> © Copyright 2026 by Core Outsourcing Services Private Limited </p>
-    <!-- /.footer-nine__copyright -->
+
+    <!-- COPYRIGHT -->
+    <p class="footer-nine__copyright">
+
+      <span class="copyright-highlight">&copy;</span>
+
+      Copyright 2026 by
+
+      <a
+        href="https://www.coreoutsourcingservices.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="copyright-company-link"
+        title="Visit Core Outsourcing Services"
+      >
+        Core Outsourcing Services Private Limited
+      </a>
+
+    </p>
+
+
+    <!-- SOCIAL MEDIA -->
     <div class="footer-nine__social">
+
+      <!-- FACEBOOK -->
       <a
         href="https://www.facebook.com/wishlansolution/"
         class="fab fa-facebook"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
       ></a>
+
+      <!-- YOUTUBE -->
       <a
         href="https://www.youtube.com/@WisLanSmartITSolutions"
         class="fab fa-youtube"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="YouTube"
       ></a>
+
+      <!-- INSTAGRAM -->
       <a
-        href=" https://www.instagram.com/wishlansolution/"
+        href="https://www.instagram.com/wishlansolution/"
         class="fab fa-instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
       ></a>
+
+      <!-- LINKEDIN -->
       <a
         href="https://www.linkedin.com/company/wishlansolution/"
         class="fab fa-linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
       ></a>
+
     </div>
-    <!-- /.footer-nine__social -->
+
   </div>
-  <!-- /.auto-container -->
 </div>
-<!-- /.footer-nine__bottom -->
-<!--End pagewrapper-->
+
+<!-- ========================================== -->
+<!-- END FOOTER -->
+<!-- ========================================== -->
